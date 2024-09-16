@@ -46,6 +46,7 @@ supports animated poster only.
 - .5
   * exclude special plugin from size calculation in helpers.py
   * Code cleanup
+  * Some issues in Gallery view fixed
 
 
 - .4

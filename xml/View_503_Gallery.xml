@@ -18,10 +18,10 @@
     <include name="View_Gallery">
         <control type="group">
          <control type="wraplist" id="$PARAM[id]">
-                <top>0</top>
+                <top>-10</top>
                 <left>-88</left>
                 <width>2736</width>
-                <height>700</height>
+                <height>690</height>
                 <onleft>$PARAM[id]</onleft>
                 <onright>$PARAM[id]</onright>
                 <ondown>5199</ondown>
