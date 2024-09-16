@@ -115,7 +115,7 @@
 				<height>60</height>
 				<control type="scrollbar" id="5199">
 					<left>0</left>
-					<bottom>70</bottom>
+					<bottom>65</bottom>
 					<width>100%</width>
 					<height>12</height>
 					<texturesliderbackground />
