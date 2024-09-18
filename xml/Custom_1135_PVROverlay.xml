@@ -130,6 +130,7 @@
 				<visible>!Player.ChannelPreviewActive</visible>
 				<control type="group">
 					<width>58</width>
+					<visible>Player.HasVideo</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="$VAR[VideoPlayer3DFlagVar]" />
 						<param name="fallback" value="flags/videoresolution/fallback.png" />
@@ -138,6 +139,7 @@
 				</control>
 				<control type="group">
 					<width>104</width>
+					<visible>Player.HasVideo</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]" />
 						<param name="fallback" value="flags/videocodec/fallback.png" />
@@ -146,6 +148,7 @@
 				</control>
 				<control type="group">
 					<width>86</width>
+					<visible>Player.HasVideo</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]" />
 						<param name="fallback" value="flags/aspectratio/fallback.png" />

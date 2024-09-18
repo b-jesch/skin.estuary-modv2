@@ -60,7 +60,7 @@ if __name__ == '__main__':
     xbmc.log('Estuary MOD V2 Nexus service handler started', level=xbmc.LOGINFO)
 
     while not monitor.abortRequested():
-        if monitor.waitForAbort(0.5): break
+        if monitor.waitForAbort(2): break
 
         # call service viewswitcher
 
