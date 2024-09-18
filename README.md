@@ -47,6 +47,8 @@ supports animated poster only.
   * exclude special plugin from size calculation in helpers.py
   * Code cleanup
   * Some issues in Gallery view fixed
+  * unnecessary video flags removed when playing PVR radio stations
+  * service interval of view switcher increased
 
 
 - .4
