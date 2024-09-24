@@ -43,6 +43,10 @@ supports animated poster only.
 
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
+- .6
+  * some smaller issues in several views fixed
+
+
 - .5
   * exclude special plugin from size calculation in helpers.py
   * Code cleanup

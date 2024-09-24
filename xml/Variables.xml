@@ -683,10 +683,9 @@
 		<value>$LOCALIZE[31264]</value>
 	</variable>
 	<variable name="InfoWidgetThumbVar">
-		<value condition="!String.IsEmpty(Listitem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
-		<value condition="!String.IsEmpty(Listitem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(set.fanart))">$INFO[ListItem.Art(set.fanart)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="!String.IsEmpty(Listitem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(set.fanart))">$INFO[ListItem.Art(set.fanart)]</value>
