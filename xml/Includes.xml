@@ -127,6 +127,7 @@
 					<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(503) | Control.IsVisible(506) | Control.IsVisible(510)</visible>
 					<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+					<animation effect="slide" end="0,-13" time="0" condition="Control.IsVisible(506)">conditional</animation>
 					<animation effect="slide" end="0,90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 				</control>
 			</control>
@@ -929,7 +930,7 @@
 						<width>153</width>
 						<height>86</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
+						<texture background="true" fallback="DefaultVideoCover.png">$VAR[WidgetThumbViewVar]</texture>
 						<bordertexture colordiffuse="$VAR[MediaFlagsColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>
@@ -941,7 +942,7 @@
 						<width>153</width>
 						<height>86</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
+						<texture background="true" fallback="DefaultVideoCover.png">$VAR[WidgetThumbViewVar]</texture>
 						<bordertexture colordiffuse="$VAR[MediaFlagsColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>

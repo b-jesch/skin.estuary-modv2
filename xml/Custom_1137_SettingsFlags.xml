@@ -120,8 +120,8 @@
 					<control type="radiobutton" id="11122">
 						<label>$LOCALIZE[31456]</label>
 						<include>DefaultSettingButton</include>
-						<selected>!Skin.HasSetting(show_albumsartistlag)</selected>
-						<onclick>Skin.ToggleSetting(show_albumsartistlag)</onclick>
+						<selected>!Skin.HasSetting(show_albumsartistflag)</selected>
+						<onclick>Skin.ToggleSetting(show_albumsartistflag)</onclick>
 					</control>
 				</control>
 				<include content="SettingsScrollbar">
