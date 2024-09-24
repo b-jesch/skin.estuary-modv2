@@ -926,7 +926,7 @@
 						<width>153</width>
 						<height>86</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
+						<texture background="true" fallback="DefaultVideoCover.png">$VAR[WidgetThumbViewVar]</texture>
 						<bordertexture colordiffuse="$VAR[MediaFlagsColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>
@@ -938,7 +938,7 @@
 						<width>153</width>
 						<height>86</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
+						<texture background="true" fallback="DefaultVideoCover.png">$VAR[WidgetThumbViewVar]</texture>
 						<bordertexture colordiffuse="$VAR[MediaFlagsColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>
