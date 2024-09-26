@@ -44,7 +44,7 @@ supports animated poster only.
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
 - .6
-  * some smaller issues in several views fixed
+  * some smaller artwork issues in several views fixed
 
 
 - .5
