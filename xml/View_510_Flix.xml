@@ -106,7 +106,7 @@
 				<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + String.IsEmpty(ListItem.Property(WatchedEpisodes)) + String.IsEmpty(ListItem.Property(UnwatchedEpisodes)) + !String.IsEmpty(ListItem.Property(TotalEpisodes)) + !String.IsEqual(Skin.String(EpisodesDisplay),31578)</visible>
 			</control>
 			<control type="label">
-				<left>80</left>
+				<left>75</left>
 				<top>187</top>
 				<width>210</width>
 				<height>43</height>
@@ -114,18 +114,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$VAR[MainLabelMoviesSetsInfoVar]</label>
-				<visible>Container.Content(seasons) + Integer.IsGreater(ListItem.Playcount,0)</visible>
-			</control>
-			<control type="label">
-				<left>45</left>
-				<top>187</top>
-				<width>210</width>
-				<height>43</height>
-				<font>font20_title</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$VAR[MainLabelMoviesSetsInfoVar]</label>
-				<visible>Container.Content(seasons) + !Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<visible>Container.Content(seasons)</visible>
 			</control>
 			<control type="label">
 				<right>73</right>
@@ -151,7 +140,7 @@
 			<control type="group">
 				<left>35</left>
 				<top>155</top>
-				<visible>!String.StartsWith(Container.FolderPath,plugin://plugin.video) + !Container.Content(artists) + [ListItem.IsRecording | ListItem.HasReminder | ListItem.HasTimer | ListItem.IsCollection | ListItem.IsPlaying | ListItem.IsResumable | Integer.IsGreater(ListItem.Playcount,0) | ListItem.HasArchive]</visible>
+				<visible>!String.StartsWith(Container.FolderPath,plugin://plugin.video) + !Container.Content(artists) + [ListItem.IsRecording | ListItem.HasReminder | ListItem.HasTimer | ListItem.IsCollection | ListItem.IsPlaying | ListItem.IsResumable | ListItem.HasArchive | ListItem.HasVideoVersions | Container.Content(seasons)]</visible>
 				<control type="image">
 					<width>70</width>
 					<height>70</height>

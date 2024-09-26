@@ -678,8 +678,8 @@
 		<value>$LOCALIZE[31264]</value>
 	</variable>
 	<variable name="InfoWidgetThumbVar">
-		<value condition="!String.IsEmpty(Listitem.Art(setfanart))">$INFO[ListItem.Art(setfanart)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="!String.IsEmpty(Listitem.Art(setfanart))">$INFO[ListItem.Art(setfanart)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
@@ -689,8 +689,8 @@
 		<value>$INFO[ListItem.Art(icon)]</value>
 	</variable>
 	<variable name="WidgetThumbViewVar">
-		<value condition="ListItem.IsCollection + !String.IsEmpty(ListItem.Art(setfanart))">$INFO[ListItem.Art(setfanart)]</value>
 		<value condition="ListItem.IsCollection + !String.IsEmpty(ListItem.Art(set.landscape))">$INFO[ListItem.Art(set.landscape)]</value>
+		<value condition="ListItem.IsCollection + !String.IsEmpty(ListItem.Art(setfanart))">$INFO[ListItem.Art(setfanart)]</value>
 		<value condition="String.IsEqual(listitem.dbtype,episode) + !$EXP[show_unwatchedthumbs] + Integer.IsLess(ListItem.Playcount,1)">$VAR[InfoWidgetThumbVar]</value>
 		<value condition="String.IsEqual(listitem.dbtype,episode) + String.IsEmpty(ListItem.Art(thumb)) + Integer.IsLess(ListItem.Playcount,1)">$VAR[InfoWidgetThumbVar]</value>
 		<value condition="String.IsEqual(listitem.dbtype,episode) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
@@ -1956,6 +1956,7 @@
 		<value condition="ListItem.IsCollection">overlays/set.png</value>
 		<value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
 		<value condition="ListItem.IsResumable">overlays/watched/resume.png</value>
+		<value condition="Container.Content(seasons)">overlays/watched/set.png</value>
 		<value condition="Integer.IsGreater(ListItem.Playcount,0) + [Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-globalsearch.xml)]">OverlayWatched.png</value>
 		<value condition="Integer.IsGreater(ListItem.Playcount,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]">overlaywatched.png</value>
 		<value condition="Integer.IsGreater(ListItem.Playcount,0)">overlaywatched.png</value>
