@@ -140,7 +140,7 @@
 			<control type="group">
 				<left>35</left>
 				<top>155</top>
-				<visible>!String.StartsWith(Container.FolderPath,plugin://plugin.video) + !Container.Content(artists) + [ListItem.IsRecording | ListItem.HasReminder | ListItem.HasTimer | ListItem.IsCollection | ListItem.IsPlaying | ListItem.IsResumable | ListItem.HasArchive | ListItem.HasVideoVersions | Container.Content(seasons)]</visible>
+				<visible>!String.StartsWith(Container.FolderPath,plugin://plugin.video) + !Container.Content(artists) + [ListItem.IsRecording | ListItem.HasReminder | ListItem.HasTimer | ListItem.IsCollection | ListItem.IsPlaying | ListItem.IsResumable | ListItem.HasArchive | ListItem.HasVideoVersions | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				<control type="image">
 					<width>70</width>
 					<height>70</height>
