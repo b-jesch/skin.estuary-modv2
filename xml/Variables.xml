@@ -1716,8 +1716,9 @@
 		<value>$INFO[ListItem.AudioCodec,flags/audiocodec/,.png]</value>
 	</variable>
 	<variable name="VideoPlayerAudioCodecFlagVar">
-		<value condition="String.Contains(Player.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
-		<value condition="String.Contains(Player.Filenameandpath,DTS-X) | String.Contains(Player.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(VideoPlayer.AudioCodec,truehd) + String.Contains(Player.Filenameandpath,ATMOS)">flags/audiocodec/atmos.png</value>
+		<value condition="String.Contains(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Filenameandpath,DTS-X) | String.Contains(Player.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
+		<value condition="String.Contains(VideoPlayer.AudioCodec,dtsma) + String.Contains(Player.Filenameandpath,DTS-X) | String.Contains(Player.Filenameandpath,DTSX)">flags/audiocodec/dts-x.png</value>
 		<value>$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]</value>
 	</variable>
 	<variable name="Container6_AudioCodecFlagVar">
