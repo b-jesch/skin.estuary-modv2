@@ -1956,11 +1956,11 @@
 		<value condition="ListItem.IsCollection">overlays/set.png</value>
 		<value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
 		<value condition="ListItem.IsResumable">overlays/watched/resume.png</value>
-		<value condition="Container.Content(seasons)">overlays/watched/set.png</value>
 		<value condition="Integer.IsGreater(ListItem.Playcount,0) + [Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-globalsearch.xml)]">OverlayWatched.png</value>
 		<value condition="Integer.IsGreater(ListItem.Playcount,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]">overlaywatched.png</value>
 		<value condition="Integer.IsGreater(ListItem.Playcount,0)">overlaywatched.png</value>
 		<value condition="ListItem.HasArchive">windows/pvr/archive.png</value>
+		<value condition="Container.Content(seasons)">overlays/watched/set.png</value>
 	</variable>
 	<!-- Breadcrumbs -->
 	<variable name="BreadcrumbsVideoVar">
