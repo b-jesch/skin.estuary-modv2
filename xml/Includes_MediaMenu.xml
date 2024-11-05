@@ -460,6 +460,7 @@
 				<include>MediaMenuItemsCommonRadio</include>
 				<label>$LOCALIZE[31685]</label>
 				<selected>Skin.HasSetting(ShowRuntime)</selected>
+				<visible>Container.Content(files)</visible>
 				<onclick>Skin.ToggleSetting(ShowRuntime)</onclick>
 			</control>
 			<control type="button" id="19">
