@@ -1302,7 +1302,7 @@
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>$VAR[SkinColorVar]</textcolor>
-				<label>[B]$INFO[ListItem.Genre, $LOCALIZE[515] : [COLOR white]] $INFO[ListItem.Property(GenreType), (,)[/COLOR]][/B]</label>
+				<label>[B]$INFO[ListItem.Genre, $LOCALIZE[515] : [COLOR white],[/COLOR]] $INFO[ListItem.Property(GenreType), [COLOR white](,)[/COLOR]][/B]</label>
 				<scroll>true</scroll>
 			</control>
 			<control type="label">
