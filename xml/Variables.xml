@@ -1498,7 +1498,9 @@
  		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[20359]) + Skin.HasSetting(hide_pubyear) + Skin.HasSetting(circle_bothrating) + !String.IsEmpty(ListItem.UserRating) + Container.Content(episodes)">$INFO[ListItem.UserRating]</value>
  		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[20359]) + Skin.HasSetting(hide_pubyear) + Skin.HasSetting(circle_bothrating) + String.IsEmpty(ListItem.UserRating) + Container.Content(episodes)">$INFO[ListItem.Rating]</value>
  		<value condition="!String.IsEmpty(ListItem.Appearances)">$LOCALIZE[38026] : $INFO[ListItem.Appearances]</value>
-		<value>$INFO[ListItem.Label2]</value>
+		<value condition="!String.IsEqual(Container.SortMethod,$LOCALIZE[180]) +  Skin.HasSetting(ShowRuntime) + !String.IsEmpty(ListItem.Duration(mins)) + !String.StartsWith(ListItem.Label2,0.00) + !String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Duration(mins),, $LOCALIZE[31684]]$INFO[ListItem.Label2, • ,]</value>
+		<value condition="Skin.HasSetting(ShowRuntime) + !String.IsEmpty(ListItem.Duration(mins)) + [String.StartsWith(ListItem.Label2,0.00) | String.IsEmpty(ListItem.Label2)]">$INFO[ListItem.Duration(mins),, $LOCALIZE[31684]]</value>
+		<value condition="!String.StartsWith(ListItem.Label2,0.00) + !String.IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
 	</variable>
 	<variable name="ShiftLeftTextBoxVar">
 		<value condition="Window.IsActive(pictures)">$INFO[ListItem.Property(description),,[CR]]$INFO[ListItem.PictureDatetime,$LOCALIZE[552] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureResolution,$LOCALIZE[169] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureCamMake,$LOCALIZE[31041] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureCamModel,$LOCALIZE[21823] : [COLOR white],[/COLOR][CR]]</value>

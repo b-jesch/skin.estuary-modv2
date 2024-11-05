@@ -2707,3 +2707,13 @@ msgstr "Info Labels"
 msgctxt "#31683"
 msgid "(currently deactivated)"
 msgstr "(aktuell deaktiviert)"
+
+#: Time format minutes (list views)
+
+msgctxt "#31684"
+msgid "mins"
+msgstr "min"
+
+msgctxt "#31685"
+msgid "Show Run Time in List Views"
+msgstr "Zeige Laufzeit in Listen"
