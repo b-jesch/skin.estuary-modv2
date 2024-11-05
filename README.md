@@ -43,6 +43,17 @@ supports animated poster only.
 
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
+- .9
+  * Runtime (mins) of media files in list views added (file mode)
+  * Visibility conditions of showing splash screen depending on startup action in skin settings fixed
+  * Info View in PVR channels panel fixed
+
+
+- .8
+  * smaller issues fixed
+  * show dts-x/atmos flags on video OSD only when these streams are selected (thanks Frodo19)
+
+
 - .7
   * some smaller artwork issues in several views fixed pt.2
 
