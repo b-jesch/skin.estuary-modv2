@@ -2854,3 +2854,13 @@ msgstr ""
 msgctxt "#31683"
 msgid "(currently deactivated)"
 msgstr ""
+
+#: Time format minutes (list views)
+
+msgctxt "#31684"
+msgid "mins"
+msgstr ""
+
+msgctxt "#31685"
+msgid "Show Run Time in List Views"
+msgstr ""

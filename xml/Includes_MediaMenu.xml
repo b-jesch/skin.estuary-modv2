@@ -456,6 +456,13 @@
 				<visible>Control.IsEnabled(4)</visible>
 				<onclick>SendClick(4)</onclick>
 			</control>
+			<control type="radiobutton" id="6062">
+				<include>MediaMenuItemsCommonRadio</include>
+				<label>$LOCALIZE[31685]</label>
+				<selected>Skin.HasSetting(ShowRuntime)</selected>
+				<visible>Container.Content(files)</visible>
+				<onclick>Skin.ToggleSetting(ShowRuntime)</onclick>
+			</control>
 			<control type="button" id="19">
 				<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
 				<include>MediaMenuItemsCommon</include>
