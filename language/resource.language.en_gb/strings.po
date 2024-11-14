@@ -2867,22 +2867,22 @@ msgstr ""
 
 #: Player Process Info
 
-msgctxt "#31684"
+msgctxt "#31686"
 msgid "Video Queue"
 msgstr ""
 
-msgctxt "#31685"
+msgctxt "#31687"
 msgid "Video Queue Data"
 msgstr ""
 
-msgctxt "#31686"
+msgctxt "#31688"
 msgid "Audio Queue"
 msgstr ""
 
-msgctxt "#31687"
+msgctxt "#31689"
 msgid "Audio Queue Data"
 msgstr ""
 
-msgctxt "#31688"
+msgctxt "#31690"
 msgid "HDR & DV"
 msgstr ""
