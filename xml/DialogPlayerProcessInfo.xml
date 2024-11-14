@@ -178,7 +178,7 @@
 					<control type="label">
 						<width>300</width>
 						<aligny>bottom</aligny>
-						<label>$LOCALIZE[31684] : </label>
+						<label>$LOCALIZE[31686] : </label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>!System.Platform.Android</visible>
@@ -198,7 +198,7 @@
 					<control type="label">
 						<width>300</width>
 						<aligny>bottom</aligny>
-						<label>$LOCALIZE[31685] : </label>
+						<label>$LOCALIZE[31687] : </label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>!System.Platform.Android</visible>
@@ -218,7 +218,7 @@
 					<control type="label">
 						<width>300</width>
 						<aligny>bottom</aligny>
-						<label>$LOCALIZE[31686] : </label>
+						<label>$LOCALIZE[31688] : </label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>!System.Platform.Android</visible>
@@ -238,7 +238,7 @@
 					<control type="label">
 						<width>300</width>
 						<aligny>bottom</aligny>
-						<label>$LOCALIZE[31687] : </label>
+						<label>$LOCALIZE[31689] : </label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>!System.Platform.Android</visible>
@@ -573,7 +573,7 @@
 					<width>auto</width>
 					<height>100</height>
 					<textoffsetx>30</textoffsetx>
-					<label>$LOCALIZE[31688]</label>
+					<label>$LOCALIZE[31690]</label>
 					<font>font25_title</font>
 					<onup>5554</onup>
 					<ondown>5554</ondown>
