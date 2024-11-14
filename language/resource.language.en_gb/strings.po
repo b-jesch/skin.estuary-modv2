@@ -2854,3 +2854,35 @@ msgstr ""
 msgctxt "#31683"
 msgid "(currently deactivated)"
 msgstr ""
+
+#: Time format minutes (list views)
+
+msgctxt "#31684"
+msgid "mins"
+msgstr ""
+
+msgctxt "#31685"
+msgid "Show Run Time in List Views"
+msgstr ""
+
+#: Player Process Info
+
+msgctxt "#31686"
+msgid "Video Queue"
+msgstr ""
+
+msgctxt "#31687"
+msgid "Video Queue Data"
+msgstr ""
+
+msgctxt "#31688"
+msgid "Audio Queue"
+msgstr ""
+
+msgctxt "#31689"
+msgid "Audio Queue Data"
+msgstr ""
+
+msgctxt "#31690"
+msgid "HDR & DV"
+msgstr ""
