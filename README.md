@@ -45,6 +45,7 @@ supports animated poster only.
 
 ### 4.2.1+nexus ###
 - .0
+  * some features from Omega taken over 
   * End of development
   * smaller improvements in touch mode
   * special audio flags in info dialog fixed

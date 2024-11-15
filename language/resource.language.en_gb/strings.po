@@ -2886,3 +2886,7 @@ msgstr ""
 msgctxt "#31690"
 msgid "HDR & DV"
 msgstr ""
+
+msgctxt "#31691"
+msgid "HDR file descriptor"
+msgstr ""

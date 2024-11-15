@@ -2737,3 +2737,7 @@ msgstr "Audo Queue Daten"
 msgctxt "#31690"
 msgid "HDR & DV"
 msgstr "HDR & DV"
+
+msgctxt "#31691"
+msgid "HDR file descriptor"
+msgstr "HDR Dateikennung"
