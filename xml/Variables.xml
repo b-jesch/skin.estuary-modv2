@@ -2253,4 +2253,9 @@
         <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,8)">7.1</value>
         <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,10)">9.1</value>
     </variable>
+	<variable name="LabelHdrTypeVar">
+		<value condition="String.IsEqual(VideoPlayer.HdrType,dolbyvision">Dolby Vision</value>
+		<value condition="!String.IsEmpty(VideoPlayer.HdrType)">$INFO[VideoPlayer.HdrType,[UPPERCASE],[/UPPERCASE]]</value>
+		<value>SDR</value>
+	</variable>
 </includes>

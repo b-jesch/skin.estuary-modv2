@@ -2698,15 +2698,7 @@ msgctxt "#31681"
 msgid "unwatched / total"
 msgstr "ungesehen / gesamt"
 
-#: Player Process Info
-
-msgctxt "#31682"
-msgid "Info Labels"
-msgstr "Info Labels"
-
-msgctxt "#31683"
-msgid "(currently deactivated)"
-msgstr "(aktuell deaktiviert)"
+#: EMPTY 31682 - 31683
 
 #: Time format minutes (list views)
 
@@ -2739,3 +2731,7 @@ msgstr "Audo Queue Daten"
 msgctxt "#31690"
 msgid "HDR & DV"
 msgstr "HDR & DV"
+
+msgctxt "#31691"
+msgid "HDR file descriptor"
+msgstr "HDR Dateikennung"
