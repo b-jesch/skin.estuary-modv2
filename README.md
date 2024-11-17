@@ -43,6 +43,10 @@ supports animated poster only.
 
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
+- .10
+- * Player Process Info of CoreELEC CPM builds extended (DV/HDR)
+
+
 - .9
   * Player Process Info improved
   * Runtime (mins) of media files in list views added (file mode)

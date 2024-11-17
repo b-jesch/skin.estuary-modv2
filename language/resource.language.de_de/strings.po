@@ -2733,5 +2733,9 @@ msgid "HDR & DV"
 msgstr "HDR & DV"
 
 msgctxt "#31691"
-msgid "HDR file descriptor"
-msgstr "HDR Dateikennung"
+msgid "HDR descriptor"
+msgstr "HDR Kennung"
+
+msgctxt "#31692"
+msgid "CPU Usage"
+msgstr "CPU Auslastung"
