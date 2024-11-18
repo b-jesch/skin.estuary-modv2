@@ -2274,6 +2274,10 @@
 		<value condition="String.IsEqual(Player.Process(video.dovi.el.present),1)">[COLOR lightgreen]■[/COLOR] [COLOR $VAR[ColorHighlight]]EL Layer[/COLOR]</value>
 		<value>[COLOR dimgrey]■ EL Layer[/COLOR]</value>
 	</variable>
+    <variable name="ELSourcePresentVar">
+        <value condition="String.IsEqual(Player.Process(video.source.dovi.el.present),1)">[COLOR lightgreen]■[/COLOR] [COLOR $VAR[ColorHighlight]]EL Type[/COLOR]</value>
+        <value>[COLOR dimgrey]■ EL Type[/COLOR]</value>
+    </variable>
 	<variable name="DVTunnelVar">
 		<value condition="String.Contains(Player.Process(amlogic.vs10.mode.raw),1)">(DV Tunnel)</value>
 	</variable>

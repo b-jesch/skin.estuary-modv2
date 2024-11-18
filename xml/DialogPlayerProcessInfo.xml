@@ -314,7 +314,7 @@
 						<left>360</left>
 						<width>330</width>
 						<aligny>bottom</aligny>
-						<label>[COLOR white]$INFO[Player.Process(video.dovi.source.min.nits)] | $INFO[Player.Process(video.dovi.source.max.nits)] nits[/COLOR]</label>
+						<label>[COLOR white]$INFO[Player.Process(video.dovi.source.min.nits)] | $INFO[Player.Process(video.dovi.source.max.nits)] $LOCALIZE[31699][/COLOR]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
@@ -333,7 +333,7 @@
 						<left>360</left>
 						<width>330</width>
 						<aligny>bottom</aligny>
-						<label>[COLOR white]$INFO[Player.Process(video.dovi.l6.max.cll)] | $INFO[Player.Process(video.dovi.l6.max.fall)] nits[/COLOR]</label>
+						<label>[COLOR white]$INFO[Player.Process(video.dovi.l6.max.cll)] | $INFO[Player.Process(video.dovi.l6.max.fall)] $LOCALIZE[31699][/COLOR]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>String.IsEqual(Player.Process(video.dovi.has.config),1) + String.IsEqual(Player.Process(video.dovi.has.l6),1)</visible>
@@ -353,7 +353,7 @@
 						<left>360</left>
 						<width>330</width>
 						<aligny>bottom</aligny>
-						<label>[COLOR white] $INFO[Player.Process(video.dovi.l1.min.nits)] | $INFO[Player.Process(video.dovi.l1.max.nits)] | $INFO[Player.Process(video.dovi.l1.avg.nits)] nits[/COLOR]</label>
+						<label>[COLOR white] $INFO[Player.Process(video.dovi.l1.min.nits)] | $INFO[Player.Process(video.dovi.l1.max.nits)] | $INFO[Player.Process(video.dovi.l1.avg.nits)] $LOCALIZE[31699][/COLOR]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>String.Contains(Player.Process(video.hdr.type),hdr)</visible>
@@ -392,7 +392,7 @@
 						<left>360</left>
 						<width>330</width>
 						<aligny>bottom</aligny>
-						<label>[COLOR white] $INFO[Player.Process(video.hdr.min.lum)] | $INFO[Player.Process(video.hdr.max.lum)] nits[/COLOR]</label>
+						<label>[COLOR white] $INFO[Player.Process(video.hdr.min.lum)] | $INFO[Player.Process(video.hdr.max.lum)] $LOCALIZE[31699][/COLOR]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>String.Contains(Player.Process(video.hdr.type),hdr)</visible>
@@ -412,7 +412,7 @@
 						<left>360</left>
 						<width>330</width>
 						<aligny>bottom</aligny>
-						<label>[COLOR white] $INFO[Player.Process(video.hdr.max.cll)] | $INFO[Player.Process(video.hdr.max.fall)] nits[/COLOR]</label>
+						<label>[COLOR white] $INFO[Player.Process(video.hdr.max.cll)] | $INFO[Player.Process(video.hdr.max.fall)] $LOCALIZE[31699][/COLOR]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
@@ -463,6 +463,14 @@
 						<width>690</width>
 						<aligny>bottom</aligny>
 						<label>$VAR[ELPresentVar]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+					</control>
+					<control type="label">
+						<height>35</height>
+						<width>690</width>
+						<aligny>bottom</aligny>
+						<label>$VAR[ELSourcePresentVar] $VAR[DVELVar]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>

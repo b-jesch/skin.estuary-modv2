@@ -2922,3 +2922,7 @@ msgstr ""
 msgctxt "#31698"
 msgid "HDR10 BL maxCLL/maxFALL"
 msgstr ""
+
+msgctxt "#31699"
+msgid "cd/m²"
+msgstr ""

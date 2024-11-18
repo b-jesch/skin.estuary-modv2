@@ -2763,3 +2763,7 @@ msgstr "HDR10 BL MDL"
 msgctxt "#31698"
 msgid "HDR10 BL maxCLL/maxFALL"
 msgstr "HDR10 BL maxCLL/maxFALL"
+
+msgctxt "#31699"
+msgid "cd/m²"
+msgstr "cd/m²"
