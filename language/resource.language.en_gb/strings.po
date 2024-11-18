@@ -2894,3 +2894,31 @@ msgstr ""
 msgctxt "#31692"
 msgid "CPU Usage"
 msgstr ""
+
+msgctxt "#31692"
+msgid "CPU Usage"
+msgstr ""
+
+msgctxt "#31693"
+msgid "RPU (L6) MDL"
+msgstr ""
+
+msgctxt "#31694"
+msgid "RPU (L6) maxCLL/maxFALL"
+msgstr ""
+
+msgctxt "#31695"
+msgid "L1 min/max/avg Luminance"
+msgstr ""
+
+msgctxt "#31696"
+msgid "L1 min/max/avg PQ"
+msgstr ""
+
+msgctxt "#31697"
+msgid "HDR10 BL MDL"
+msgstr ""
+
+msgctxt "#31698"
+msgid "HDR10 BL maxCLL/maxFALL"
+msgstr ""

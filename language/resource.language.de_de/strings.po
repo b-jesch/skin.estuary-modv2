@@ -2739,3 +2739,27 @@ msgstr "HDR Kennung"
 msgctxt "#31692"
 msgid "CPU Usage"
 msgstr "CPU Auslastung"
+
+msgctxt "#31693"
+msgid "RPU (L6) MDL"
+msgstr "RPU (L6) MDL"
+
+msgctxt "#31694"
+msgid "RPU (L6) maxCLL/maxFALL"
+msgstr "RPU (L6) maxCLL/maxFALL"
+
+msgctxt "#31695"
+msgid "L1 min/max/avg Luminance"
+msgstr "L1 min/max/avg Luminanz"
+
+msgctxt "#31696"
+msgid "L1 min/max/avg PQ"
+msgstr "L1 min/max/avg PQ"
+
+msgctxt "#31697"
+msgid "HDR10 BL MDL"
+msgstr "HDR10 BL MDL"
+
+msgctxt "#31698"
+msgid "HDR10 BL maxCLL/maxFALL"
+msgstr "HDR10 BL maxCLL/maxFALL"

@@ -306,7 +306,7 @@
 					<control type="label">
 						<width>360</width>
 						<aligny>bottom</aligny>
-						<label>RPU (L6) MDL : </label>
+						<label>$LOCALIZE[31693] : </label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
@@ -325,7 +325,7 @@
 					<control type="label">
 						<width>360</width>
 						<aligny>bottom</aligny>
-						<label>RPU (L6) maxCLL/maxFALL : </label>
+						<label>$LOCALIZE[31694] : </label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
@@ -345,7 +345,7 @@
 					<control type="label">
 						<width>360</width>
 						<aligny>bottom</aligny>
-						<label>L1 min/max/avg Lum : </label>
+						<label>$LOCALIZE[31695] : </label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
@@ -365,7 +365,7 @@
 					<control type="label">
 						<width>360</width>
 						<aligny>bottom</aligny>
-						<label>L1 min/max/avg PQ : </label>
+						<label>$LOCALIZE[31696] : </label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
@@ -384,7 +384,7 @@
 					<control type="label">
 						<width>360</width>
 						<aligny>bottom</aligny>
-						<label>HDR10 BL MDL : </label>
+						<label>$LOCALIZE[31697] : </label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
@@ -404,7 +404,7 @@
 					<control type="label">
 						<width>360</width>
 						<aligny>bottom</aligny>
-						<label>HDR10 BL maxCLL/maxFALL : </label>
+						<label>$LOCALIZE[31698] : </label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
