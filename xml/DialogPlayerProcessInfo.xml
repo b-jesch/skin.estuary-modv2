@@ -432,7 +432,7 @@
 						<width>690</width>
 						<height>35</height>
 						<aligny>bottom</aligny>
-						<label>$INFO[Player.Process(video.dovi.profile),$LOCALIZE[31700] : [COLOR white],.$INFO[Player.Process(video.dovi.bl.signal.compatibility)] $VAR[DVELVar][/COLOR]]</label>
+						<label>$INFO[Player.Process(video.dovi.profile),$LOCALIZE[31700] : [COLOR white]]$INFO[Player.Process(video.dovi.bl.signal.compatibility),.] $VAR[DVELVar][/COLOR]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>

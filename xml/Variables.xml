@@ -1634,7 +1634,7 @@
 		<value condition="String.Contains(ListItem.Filenameandpath,bluray) | String.Contains(ListItem.Filenameandpath,blu-ray) | String.Contains(ListItem.Filenameandpath,bdrip)">flags/bluray.png</value>
 	</variable>
 	<variable name="VideoresolutionFullScreenVar">
-		<value condition="String.StartsWith(Player.Process(amlogic.eoft_gamut),HDR10+)">flags/fullscreen/hdrplus_fs.png</value>
+		<value condition="String.Contains(Player.Process(video.source.hdr.type),Hdr10) + [String.Contains(Player.Process(video.dovi.codec.string),8) | String.Contains(Player.Process(video.dovi.codec.string),7) | String.Contains(Player.Process(video.dovi.codec.string),5) | String.Contains(Player.Process(video.dovi.codec.string),4)]">flags/fullscreen/hdrplus_fs.png</value>
 		<value condition="String.StartsWith(Player.Process(amlogic.eoft_gamut),HDR10)">flags/fullscreen/hdr_fs.png</value>
 		<value condition="String.StartsWith(Player.Process(amlogic.eoft_gamut),HLG)">flags/fullscreen/hlg_fs.png</value>
 		<value condition="String.StartsWith(Player.Process(amlogic.eoft_gamut),DV)">flags/fullscreen/dv_fs.png</value>
@@ -2275,8 +2275,8 @@
 		<value>[COLOR dimgrey]■ EL Layer[/COLOR]</value>
 	</variable>
     <variable name="ELSourcePresentVar">
-        <value condition="String.IsEqual(Player.Process(video.source.dovi.el.present),1)">[COLOR lightgreen]■[/COLOR] [COLOR $VAR[ColorHighlight]]EL Type[/COLOR]</value>
-        <value>[COLOR dimgrey]■ EL Type[/COLOR]</value>
+        <value condition="String.IsEqual(Player.Process(video.source.dovi.el.present),1)">[COLOR lightgreen]■[/COLOR] [COLOR $VAR[ColorHighlight]]EL Source Type[/COLOR]</value>
+        <value>[COLOR dimgrey]■ EL Source Type[/COLOR]</value>
     </variable>
 	<variable name="DVTunnelVar">
 		<value condition="String.Contains(Player.Process(amlogic.vs10.mode.raw),1)">(DV Tunnel)</value>
