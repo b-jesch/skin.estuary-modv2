@@ -2767,3 +2767,11 @@ msgstr "HDR10 BL maxCLL/maxFALL"
 msgctxt "#31699"
 msgid "cd/m²"
 msgstr "cd/m²"
+
+msgctxt "#31700"
+msgid "Dolby Vision Profile"
+msgstr "Dolby Vision Profil"
+
+msgctxt "#31701"
+msgid "Level"
+msgstr "Level"

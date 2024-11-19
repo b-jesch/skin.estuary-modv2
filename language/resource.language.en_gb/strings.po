@@ -2926,3 +2926,11 @@ msgstr ""
 msgctxt "#31699"
 msgid "cd/m²"
 msgstr ""
+
+msgctxt "#31700"
+msgid "Dolby Vision Profile"
+msgstr ""
+
+msgctxt "#31701"
+msgid "Level"
+msgstr ""

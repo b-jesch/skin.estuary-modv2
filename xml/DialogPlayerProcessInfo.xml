@@ -153,37 +153,32 @@
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="label">
+					<height>10</height>
+					<width>690</width>
+					<aligny>bottom</aligny>
+					<label/>
+					<font>font8</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+				</control>
+				<control type="group">
 					<height>35</height>
 					<width>690</width>
-					<aligny>bottom</aligny>
-					<label>$INFO[System.CpuUsage,$LOCALIZE[31692] : [COLOR white],[/COLOR]]</label>
-					<font>font12</font>
-					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<scroll>true</scroll>
 					<visible>!System.Platform.Android</visible>
-				</control>
-				<control type="label">
-					<height>10</height>
-					<width>690</width>
-					<aligny>bottom</aligny>
-					<label/>
-					<font>font8</font>
-					<textcolor>$VAR[SkinColorVar]</textcolor>
-				</control>
-				<control type="progress">
-					<description>CPU BAR</description>
-					<width>690</width>
-					<height>14</height>
-					<info>System.CPUUsage</info>
-					<visible>!System.Platform.Android</visible>
-				</control>
-				<control type="label">
-					<height>10</height>
-					<width>690</width>
-					<aligny>bottom</aligny>
-					<label/>
-					<font>font8</font>
-					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<control type="label">
+						<width>300</width>
+						<aligny>bottom</aligny>
+						<label>$LOCALIZE[140] </label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+					</control>
+					<control type="progress">
+						<description>CPU BAR</description>
+						<left>260</left>
+						<width>430</width>
+						<top>12</top>
+						<height>14</height>
+						<info>System.CPUUsage</info>
+					</control>
 				</control>
 				<control type="group">
 					<height>35</height>
@@ -204,84 +199,83 @@
 						<info>system.memory(used)</info>
 					</control>
 				</control>
-				<control type="group">
-					<height>35</height>
-					<width>690</width>
+				<control type="grouplist">
 					<visible>String.Contains(System.OSVersionInfo,(cpm))</visible>
-					<control type="label">
-						<width>300</width>
-						<aligny>bottom</aligny>
-						<label>$LOCALIZE[31686] : </label>
-						<font>font12</font>
-						<textcolor>$VAR[SkinColorVar]</textcolor>
+					<control type="group">
+						<height>35</height>
+						<width>690</width>
+						<control type="label">
+							<width>300</width>
+							<aligny>bottom</aligny>
+							<label>$LOCALIZE[31686] : </label>
+							<font>font12</font>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
+						</control>
+						<control type="progress">
+							<description>VIDEO QUEUE BAR</description>
+							<left>260</left>
+							<width>430</width>
+							<top>12</top>
+							<height>14</height>
+							<info>Player.Process(video.queue.level)</info>
+						</control>
 					</control>
-					<control type="progress">
-						<description>VIDEO QUEUE BAR</description>
-						<left>260</left>
-						<width>430</width>
-						<top>12</top>
-						<height>14</height>
-						<info>Player.Process(video.queue.level)</info>
+					<control type="group">
+						<height>35</height>
+						<width>690</width>
+						<control type="label">
+							<width>300</width>
+							<aligny>bottom</aligny>
+							<label>$LOCALIZE[31687] : </label>
+							<font>font12</font>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
+						</control>
+						<control type="progress">
+							<description>VIDEO QUEUE DATA BAR</description>
+							<left>260</left>
+							<width>430</width>
+							<top>12</top>
+							<height>14</height>
+							<info>Player.Process(video.queue.data.level)</info>
+						</control>
 					</control>
-				</control>
-				<control type="group">
-					<height>35</height>
-					<width>690</width>
-					<visible>String.Contains(System.OSVersionInfo,(cpm))</visible>
-					<control type="label">
-						<width>300</width>
-						<aligny>bottom</aligny>
-						<label>$LOCALIZE[31687] : </label>
-						<font>font12</font>
-						<textcolor>$VAR[SkinColorVar]</textcolor>
+					<control type="group">
+						<height>35</height>
+						<width>690</width>
+						<control type="label">
+							<width>300</width>
+							<aligny>bottom</aligny>
+							<label>$LOCALIZE[31688] : </label>
+							<font>font12</font>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
+						</control>
+						<control type="progress">
+							<description>AUDIO QUEUE BAR</description>
+							<left>260</left>
+							<width>430</width>
+							<top>12</top>
+							<height>14</height>
+							<info>Player.Process(audio.queue.level)</info>
+						</control>
 					</control>
-					<control type="progress">
-						<description>VIDEO QUEUE DATA BAR</description>
-						<left>260</left>
-						<width>430</width>
-						<top>12</top>
-						<height>14</height>
-						<info>Player.Process(video.queue.data.level)</info>
-					</control>
-				</control>
-				<control type="group">
-					<height>35</height>
-					<width>690</width>
-					<visible>String.Contains(System.OSVersionInfo,(cpm))</visible>
-					<control type="label">
-						<width>300</width>
-						<aligny>bottom</aligny>
-						<label>$LOCALIZE[31688] : </label>
-						<font>font12</font>
-						<textcolor>$VAR[SkinColorVar]</textcolor>
-					</control>
-					<control type="progress">
-						<description>AUDIO QUEUE BAR</description>
-						<left>260</left>
-						<width>430</width>
-						<top>12</top>
-						<height>14</height>
-						<info>Player.Process(audio.queue.level)</info>
-					</control>
-				</control>
-				<control type="group">
-					<height>35</height>
-					<width>690</width>
-					<visible>String.Contains(System.OSVersionInfo,(cpm))</visible>
-					<control type="label">
-						<width>300</width>
-						<aligny>bottom</aligny>
-						<label>$LOCALIZE[31689] : </label>
-						<font>font12</font>
-						<textcolor>$VAR[SkinColorVar]</textcolor>
-					</control>
-					<control type="progress">
-						<description>AUDIO QUEUE DATA BAR</description>
-						<left>260</left>
-						<width>430</width>
-						<top>12</top>
-						<height>14</height>
-						<info>Player.Process(audio.queue.data.level)</info>
+					<control type="group">
+						<height>35</height>
+						<width>690</width>
+						<control type="label">
+							<width>300</width>
+							<aligny>bottom</aligny>
+							<label>$LOCALIZE[31689] : </label>
+							<font>font12</font>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
+						</control>
+						<control type="progress">
+							<description>AUDIO QUEUE DATA BAR</description>
+							<left>260</left>
+							<width>430</width>
+							<top>12</top>
+							<height>14</height>
+							<info>Player.Process(audio.queue.data.level)</info>
+						</control>
 					</control>
 				</control>
 			</control>
@@ -438,9 +432,18 @@
 						<width>690</width>
 						<height>35</height>
 						<aligny>bottom</aligny>
-						<label>Dolby Vision profile : [COLOR white]$INFO[Player.Process(video.dovi.profile)].$INFO[Player.Process(video.dovi.bl.signal.compatibility)] $VAR[DVELVar][/COLOR]</label>
+						<label>$INFO[Player.Process(video.dovi.profile),$LOCALIZE[31700] : [COLOR white],.$INFO[Player.Process(video.dovi.bl.signal.compatibility)] $VAR[DVELVar][/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
+					</control>
+					<control type="label">
+						<width>690</width>
+						<height>35</height>
+						<aligny>bottom</aligny>
+						<label>$INFO[Player.Process(video.dovi.level),$LOCALIZE[31701] : ]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>!String.Contains(Player.Process(video.dovi.level),0)</visible>
 					</control>
 					<control type="label">
 						<width>690</width>
@@ -658,7 +661,7 @@
 					<label>$LOCALIZE[31138]</label>
 					<font>font25_title</font>
 					<onup>5552</onup>
-					<ondown>5552</ondown>
+					<ondown>SetFocus(800)</ondown>
 					<onclick>SetFocus(800)</onclick>
 					<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texturefocus>
 					<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
@@ -670,11 +673,11 @@
 					<label>$LOCALIZE[31690]</label>
 					<font>font25_title</font>
 					<onup>5554</onup>
-					<ondown>5554</ondown>
+					<ondown>SetFocus(800)</ondown>
 					<onclick>SetFocus(800)</onclick>
 					<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texturefocus>
 					<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
-					<visible>String.Contains(Player.Process(video.hdr.type),dolby vision) | String.Contains(Player.Process(video.hdr.type),hdr)</visible>
+					<visible>String.Contains(System.OSVersionInfo,(cpm)) + [String.Contains(Player.Process(video.hdr.type),dolby vision) | String.Contains(Player.Process(video.hdr.type),hdr)]</visible>
 				</control>
 				<control type="button" id="5551">
 					<width>auto</width>
@@ -683,7 +686,7 @@
 					<label>$LOCALIZE[31137]</label>
 					<font>font25_title</font>
 					<onup>5551</onup>
-					<ondown>5551</ondown>
+					<ondown>SetFocus(800)</ondown>
 					<onclick>SetFocus(800)</onclick>
 					<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texturefocus>
 					<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
