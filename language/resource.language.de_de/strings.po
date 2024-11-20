@@ -2775,3 +2775,7 @@ msgstr "Dolby Vision Profil"
 msgctxt "#31701"
 msgid "Level"
 msgstr "Level"
+
+msgctxt "#31702"
+msgid "Dolby Vision Version"
+msgstr "Dolby Vision Version"

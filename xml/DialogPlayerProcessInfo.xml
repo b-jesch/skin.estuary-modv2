@@ -481,6 +481,14 @@
 						<width>690</width>
 						<height>35</height>
 						<aligny>bottom</aligny>
+						<label>$INFO[Player.Process(video.dovi.version.major),$LOCALIZE[31702] : [COLOR white]]$INFO[Player.Process(video.dovi.version.minor),.,[/COLOR]]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+					</control>
+					<control type="label">
+						<width>690</width>
+						<height>35</height>
+						<aligny>bottom</aligny>
 						<label>$INFO[Player.Process(video.dovi.profile),$LOCALIZE[31700] : [COLOR white]]$INFO[Player.Process(video.dovi.bl.signal.compatibility),.] $VAR[DVELVar][/COLOR]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -525,6 +533,7 @@
 						<label>$VAR[ELSourcePresentVar]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>!String.IsEqual(Player.Process(video.source.dovi.profile),0)</visible>
 					</control>
 				</control>
 			</control>
