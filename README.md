@@ -44,7 +44,8 @@ supports animated poster only.
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
 - .10
-- * Player Process Info of CoreELEC CPM builds extended (DV/HDR)
+  * Player Process Info extended (regular Kodi builds)
+  * Introducing Player Process Info for Amlogic CPM builds (CoreELEC) (DV/HDR)
 
 
 - .9
