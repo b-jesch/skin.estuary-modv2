@@ -2938,3 +2938,7 @@ msgstr ""
 msgctxt "#31702"
 msgid "Dolby Vision Version"
 msgstr ""
+
+msgctxt "#31703"
+msgid "Audio Codec & Channels"
+msgstr ""

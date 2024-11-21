@@ -2779,3 +2779,7 @@ msgstr "Level"
 msgctxt "#31702"
 msgid "Dolby Vision Version"
 msgstr "Dolby Vision Version"
+
+msgctxt "#31703"
+msgid "Audio Codec & Channels"
+msgstr "Audio Codec & Kanäle"
