@@ -88,7 +88,7 @@
 					<font>font12</font>
 					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<visible>!String.IsEmpty(Player.Process(amlogic.eoft_gamut))</visible>
+					<visible>!String.IsEmpty(Player.Process(amlogic.eoft_gamut)) + !String.Contains(System.OSVersionInfo,(cpm))</visible>
 				</control>
 				<control type="label">
 					<height>35</height>
@@ -152,16 +152,6 @@
 					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
-				<!--
-				<control type="label">
-					<height>10</height>
-					<width>690</width>
-					<aligny>bottom</aligny>
-					<label/>
-					<font>font8</font>
-					<textcolor>$VAR[SkinColorVar]</textcolor>
-				</control>
-				-->
 				<control type="group">
 					<height>35</height>
 					<width>690</width>
@@ -460,6 +450,20 @@
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
 				</control>
+				<control type="label">
+					<width>690</width>
+					<height>35</height>
+					<label>$LOCALIZE[31704] : $VAR[VS10ModeVar]</label>
+					<font>font12</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+				</control>
+				<control type="label">
+					<width>690</width>
+					<height>35</height>
+					<label>$INFO[Player.Process(video.source.hdr.type),$LOCALIZE[31705] : [COLOR white]] $VAR[DVProfileVar] $VAR[DVELVar] $VAR[VideoConvVar][/COLOR]</label>
+					<font>font12</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+				</control>
 			</control>
 			<control type="grouplist">
 				<include content="ItemLeft" condition="![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">
@@ -475,6 +479,23 @@
 				<usecontrolcoords>true</usecontrolcoords>
 				<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive + ![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">Conditional</animation>
 				<animation effect="slide" end="0,-50" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive + [Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">Conditional</animation>
+				<control type="label">
+					<width>690</width>
+					<height>35</height>
+					<aligny>bottom</aligny>
+					<label>$INFO[Player.Process(amlogic.eoft_gamut),$LOCALIZE[31611] : [COLOR white],[/COLOR]]</label>
+					<font>font12</font>
+					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+				</control>
+				<control type="label">
+					<height>35</height>
+					<width>690</width>
+					<aligny>bottom</aligny>
+					<label>$INFO[Player.Process(video.source.hdr.type),$LOCALIZE[31706] : [COLOR white],[/COLOR]]</label>
+					<font>font12</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+				</control>
 				<control type="grouplist">
 					<visible>String.Contains(Player.Process(video.hdr.type),dolby vision)</visible>
 					<control type="label">

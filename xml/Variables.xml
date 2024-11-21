@@ -2284,4 +2284,23 @@
 	<variable name="DVTunnelVar">
 		<value condition="String.Contains(Player.Process(amlogic.vs10.mode.raw),1)">(DV Tunnel)</value>
 	</variable>
+    <variable name="VS10ModeVar">
+		<value condition="String.IsEmpty(Player.Process(amlogic.vs10.mode))">[COLOR orange]■[/COLOR]</value>
+        <value condition="String.Contains(Player.Process(amlogic.vs10.mode),Bypass)">[COLOR red]■[/COLOR]</value>
+        <value>[COLOR lightgreen]■[/COLOR]</value>
+    </variable>
+    <variable name="VideoConvVar">
+        <value condition="String.Contains(Player.Process(video.source.hdr.type),HDR10) + String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)">» $LOCALIZE[31700] 8.1</value>
+        <value condition="String.Contains(Player.Process(video.source.hdr.type),HDR10) + String.Contains(Player.Process(amlogic.vs10.mode),SDR)">» SDR</value>
+        <value condition="String.Contains(Player.Process(video.source.hdr.type),SDR) + String.Contains(Player.Process(amlogic.vs10.mode),HDR10)">» HDR10</value>
+        <value condition="String.Contains(Player.Process(video.source.hdr.type),SDR) + String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)">» $LOCALIZE[31700] 8.1</value>
+        <value condition="String.Contains(Player.Process(video.source.hdr.type),Dolby Vision) + String.Contains(Player.Process(amlogic.vs10.mode),SDR)">» SDR</value>
+    </variable>
+    <variable name="DVProfileVar">
+        <value condition="String.Contains(Player.Process(video.source.hdr.type),HDR10) + String.Contains(Player.Process(video.dovi.profile),8)">» $LOCALIZE[31700] $INFO[Player.Process(video.dovi.profile)]$VAR[DVProfileExtVar]</value>
+        <value condition="String.Contains(Player.Process(video.dovi.profile),4) | String.Contains(Player.Process(video.dovi.profile),5) | String.Contains(Player.Process(video.dovi.profile),7) | String.Contains(Player.Process(video.dovi.profile),8)"> Profile $INFO[Player.Process(video.dovi.profile)]$VAR[DVProfileExtVar]</value>
+    </variable>
+    <variable name="DVProfileExtVar">
+		<value condition="[Integer.IsGreaterOrEqual(Player.Process(video.dovi.bl.signal.compatibility),1) + Integer.IsLess(Player.Process(video.dovi.bl.signal.compatibility),4)] | Integer.IsEqual(Player.Process(video.dovi.bl.signal.compatibility),8)">$INFO[Player.Process(video.dovi.bl.signal.compatibility,.]</value>
+    </variable>
 </includes>

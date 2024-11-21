@@ -2942,3 +2942,11 @@ msgstr ""
 msgctxt "#31703"
 msgid "Audio Codec & Channels"
 msgstr ""
+
+msgctxt "#31704"
+msgid "VS10 Engine"
+msgstr ""
+
+msgctxt "#31705"
+msgid "VS10 Status"
+msgstr ""
