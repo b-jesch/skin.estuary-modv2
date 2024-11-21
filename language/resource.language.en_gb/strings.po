@@ -2886,7 +2886,54 @@ msgstr ""
 msgctxt "#31690"
 msgid "HDR & DV"
 msgstr ""
-
 msgctxt "#31691"
-msgid "HDR file descriptor"
+msgid "HDR descriptor"
+msgstr ""
+
+msgctxt "#31692"
+msgid "CPU Usage"
+msgstr ""
+
+msgctxt "#31692"
+msgid "CPU Usage"
+msgstr ""
+
+msgctxt "#31693"
+msgid "RPU (L6) MDL"
+msgstr ""
+
+msgctxt "#31694"
+msgid "RPU (L6) maxCLL/maxFALL"
+msgstr ""
+
+msgctxt "#31695"
+msgid "L1 min/max/avg Luminance"
+msgstr ""
+
+msgctxt "#31696"
+msgid "L1 min/max/avg PQ"
+msgstr ""
+
+msgctxt "#31697"
+msgid "HDR10 BL MDL"
+msgstr ""
+
+msgctxt "#31698"
+msgid "HDR10 BL maxCLL/maxFALL"
+msgstr ""
+
+msgctxt "#31699"
+msgid "cd/m²"
+msgstr ""
+
+msgctxt "#31700"
+msgid "Dolby Vision Profile"
+msgstr ""
+
+msgctxt "#31701"
+msgid "Level"
+msgstr ""
+
+msgctxt "#31702"
+msgid "Dolby Vision Version"
 msgstr ""
