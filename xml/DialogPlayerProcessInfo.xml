@@ -76,7 +76,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[System.FPS,$LOCALIZE[14220] &amp; $LOCALIZE[439] : [COLOR white], FPS$COMMA ]$INFO[Player.CacheLevel] %[/COLOR]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<visible>!String.IsEmpty(System.FPS)</visible>
 				</control>
@@ -86,7 +85,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[Player.Process(amlogic.eoft_gamut),$LOCALIZE[31611] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<visible>!String.IsEmpty(Player.Process(amlogic.eoft_gamut)) + !String.Contains(System.OSVersionInfo,(cpm))</visible>
 				</control>
@@ -139,7 +137,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[System.CpuFrequency,$LOCALIZE[13284] [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				    <visible>!System.Platform.Android</visible>
 				</control>
@@ -149,7 +146,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[System.CpuTemperature,$LOCALIZE[22011] [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="group">
@@ -485,7 +481,7 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[Player.Process(amlogic.eoft_gamut),$LOCALIZE[31611] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
+
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="label">
@@ -578,7 +574,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[PVR.ActStreamServiceName,$LOCALIZE[19099] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="label">
@@ -587,7 +582,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[PVR.ActStreamProviderName,$LOCALIZE[19101] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="label">
@@ -596,7 +590,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[PVR.ActStreamClient,$LOCALIZE[19012] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="label">
@@ -605,7 +598,7 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[PVR.ActStreamDevice,$LOCALIZE[19006] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
+
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="label">
@@ -614,7 +607,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[PVR.ActStreamStatus,$LOCALIZE[19007] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="label">
@@ -623,7 +615,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[PVR.ActStreamEncryptionName,$LOCALIZE[19015] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 			</control>
@@ -648,7 +639,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[PVR.ActStreamBer,$LOCALIZE[19010] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="label">
@@ -657,7 +647,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[PVR.ActStreamUnc,$LOCALIZE[19011] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="label">
@@ -666,7 +655,7 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[PVR.ActStreamMux,$LOCALIZE[19100] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-					<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
+
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="group">
@@ -678,7 +667,6 @@
 						<aligny>bottom</aligny>
 						<label>$INFO[PVR.ActStreamSignal,$LOCALIZE[19008] : [COLOR white],[/COLOR]]</label>
 						<font>font12</font>
-						<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
 					<control type="progress">
@@ -699,7 +687,6 @@
 						<aligny>bottom</aligny>
 						<label>$INFO[PVR.ActStreamSnr,$LOCALIZE[19009] : [COLOR white],[/COLOR]]</label>
 						<font>font12</font>
-						<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
 					<control type="progress">
