@@ -2789,3 +2789,15 @@ msgstr "Dolby Vision Version"
 msgctxt "#31703"
 msgid "Audio Codec & Channels"
 msgstr "Audio Codec & Kanäle"
+
+msgctxt "#31704"
+msgid "VS10 Engine"
+msgstr "VS10 Engine"
+
+msgctxt "#31705"
+msgid "VS10 Status"
+msgstr "VS10 Status"
+
+msgctxt "#31706"
+msgid "Media Source Type"
+msgstr "Medientyp der Quelle"
