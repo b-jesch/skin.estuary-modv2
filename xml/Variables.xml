@@ -1634,7 +1634,7 @@
 		<value condition="String.Contains(ListItem.Filenameandpath,bluray) | String.Contains(ListItem.Filenameandpath,blu-ray) | String.Contains(ListItem.Filenameandpath,bdrip)">flags/bluray.png</value>
 	</variable>
 	<variable name="VideoresolutionFullScreenVar">
-		<value condition="String.Contains(Player.Process(video.source.hdr.type),Hdr10) + [String.Contains(Player.Process(video.dovi.codec.string),8) | String.Contains(Player.Process(video.dovi.codec.string),7) | String.Contains(Player.Process(video.dovi.codec.string),5) | String.Contains(Player.Process(video.dovi.codec.string),4)]">flags/fullscreen/hdrplus_fs.png</value>
+		<value condition="String.StartsWith(Player.Process(amlogic.eoft_gamut),HDR10) + String.IsEqual(Player.Process(video.source.hdr.type.raw),2)">flags/fullscreen/hdrplus_fs.png</value>
 		<value condition="String.StartsWith(Player.Process(amlogic.eoft_gamut),HDR10)">flags/fullscreen/hdr_fs.png</value>
 		<value condition="String.StartsWith(Player.Process(amlogic.eoft_gamut),HLG)">flags/fullscreen/hlg_fs.png</value>
 		<value condition="String.StartsWith(Player.Process(amlogic.eoft_gamut),DV)">flags/fullscreen/dv_fs.png</value>
