@@ -45,7 +45,7 @@
 	<constant name="list_item_height">80</constant>
 	<expression name="infodialog_active">Window.IsActive(musicinformation) | Window.IsActive(songinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-embuary-image.xml) | Window.IsVisible(script-embuary-person.xml) | Window.IsVisible(script-embuary-video.xml) | Window.IsVisible(1132)</expression>
 	<expression name="sidebar_visible">ControlGroup(9000).HasFocus | ControlGroup(8000).HasFocus | Control.HasFocus(6130) | Control.HasFocus(6131) | Window.IsActive(videoplaylist)</expression>
-	<expression name="EnableTheme">![VideoPlayer.IsFullscreen | Window.IsActive(fullscreeninfo) | Window.IsVisible(visualisation) | Window.IsVisible(1104)]</expression>
+	<expression name="EnableTheme">![VideoPlayer.IsFullscreen | Window.IsActive(fullscreeninfo) | Window.IsActive(slideshow) | Window.IsVisible(visualisation) | Window.IsVisible(1104)]</expression>
 	<!-- Christmas Time from 1. Advent to 2. Christmas Date, fix end date (26.12.) -->
 	<expression name="ChristmasTime">System.Date(12-01,12-27) + !Skin.HasSetting(DisableThemes)</expression>
 	<expression name="ChristmasTheme">$EXP[ChristmasTime] + $EXP[EnableTheme]</expression>
@@ -3798,7 +3798,7 @@
 					<control type="group">
 						<visible>[Window.IsVisible(visualisation) + !Skin.HasSetting(show_disc)] | [!Window.IsVisible(visualisation) + !Skin.HasSetting(show_discart)]</visible>
 						<visible>Skin.HasSetting(show_replacement) | !String.IsEmpty(Player.Art(discart)) | !String.IsEmpty(Player.Art(album.discart)) | !String.IsEmpty(Window(Home).Property(PVR.Artwork.discart))</visible>
-						<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="Player.Playing + [Player.HasVideo + !Skin.HasSetting(show_discart)] | [Player.HasAudio + !Skin.HasSetting(show_disc)]">Conditional</animation>
+						<animation effect="rotate" end="-360" center="auto" time="7200" loop="true" reversible="false" condition="Player.Playing + [[Player.HasVideo + !Skin.HasSetting(show_discart)] | [Player.HasAudio + !Skin.HasSetting(show_disc)]]">Conditional</animation>
 						<control type="image" id="4393">
 							<aligny>top</aligny>
 							<aspectratio align="left">keep</aspectratio>
@@ -4153,7 +4153,7 @@
 								<param name="label_left" value="2" />
 								<param name="label" value="$INFO[MusicPlayer.SampleRate,, kHz]" />
 								<param name="texture" value="flags/cadre3.png" />
-								<param name="visible" value="!String.IsEmpty(MusicPlayer.Samplerate) + $EXP[isLossless] + Window.IsVisible(visualisation)" />
+								<param name="visible" value="!String.IsEmpty(MusicPlayer.Samplerate) + Window.IsVisible(visualisation)" />
 							</include>
 							<include content="MediaFlag">
 								<param name="width" value="155" />
@@ -4161,7 +4161,7 @@
 								<param name="label_left" value="2" />
 								<param name="label" value="$INFO[MusicPlayer.BitRate,, kbps]" />
 								<param name="texture" value="flags/cadre.png" />
-								<param name="visible" value="!String.IsEmpty(MusicPlayer.Samplerate) + $EXP[isLossless] + Window.IsVisible(visualisation)" />
+								<param name="visible" value="!String.IsEmpty(MusicPlayer.Bitrate) + Window.IsVisible(visualisation)" />
 							</include>
 							<include content="MediaFlag">
 								<param name="width" value="120" />
