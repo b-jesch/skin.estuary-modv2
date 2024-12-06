@@ -65,7 +65,7 @@
 					<height>35</height>
 					<width>690</width>
 					<aligny>bottom</aligny>
-					<label>$INFO[Player.Process(videowidth),$LOCALIZE[38031] : [COLOR white],x]$INFO[Player.Process(videoheight)]$INFO[Player.Process(videoscantype)]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS][/COLOR]</label>
+					<label>$INFO[Player.Process(videowidth),$LOCALIZE[38031] : [COLOR white],x]$INFO[Player.Process(videoheight)]$INFO[Player.Process(videoscantype)]$INFO[Player.Process(videofps),$COMMA , FpS]$INFO[Player.Process(video.live.mibit.rate),$COMMA , Mbit/s][/COLOR]</label>
 					<font>font12</font>
 					<visible>Player.HasVideo</visible>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -74,7 +74,7 @@
 					<width>690</width>
 					<height>35</height>
 					<aligny>bottom</aligny>
-					<label>$INFO[System.FPS,$LOCALIZE[14220] &amp; $LOCALIZE[439] : [COLOR white], FPS$COMMA ]$INFO[Player.CacheLevel] %[/COLOR]</label>
+					<label>$INFO[System.FPS,$LOCALIZE[14220] &amp; $LOCALIZE[439] : [COLOR white], FpS]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.CacheLevel,$COMMA , %][/COLOR]</label>
 					<font>font12</font>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<visible>!String.IsEmpty(System.FPS)</visible>
