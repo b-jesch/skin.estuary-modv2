@@ -65,9 +65,21 @@
 					<height>35</height>
 					<width>690</width>
 					<aligny>bottom</aligny>
-					<label>$INFO[Player.Process(videowidth),$LOCALIZE[38031] : [COLOR white],x]$INFO[Player.Process(videoheight)]$INFO[Player.Process(videoscantype)]$INFO[Player.Process(videofps),$COMMA , $LOCALIZE[31707]]$INFO[Player.Process(video.live.mibit.rate),$COMMA , $LOCALIZE[31708]][/COLOR]</label>					<font>font12</font>
+					<label>$INFO[Player.Process(videowidth),$LOCALIZE[38031] : [COLOR white],x]$INFO[Player.Process(videoheight)]$INFO[Player.Process(videoscantype)]$INFO[Player.Process(videofps),$COMMA , $LOCALIZE[31707]]$INFO[Player.Process(video.live.mibit.rate),$COMMA , $LOCALIZE[31708]][/COLOR]</label>
+					<font>font12</font>
 					<visible>Player.HasVideo</visible>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<visible>!String.IsEmpty(Player.Process(video.live.mibit.rate))</visible>
+				</control>
+				<control type="label">
+					<height>35</height>
+					<width>690</width>
+					<aligny>bottom</aligny>
+					<label>$INFO[Player.Process(videowidth),$LOCALIZE[38031] : [COLOR white],x]$INFO[Player.Process(videoheight)]$INFO[Player.Process(videoscantype)]$INFO[Player.Process(videofps),$COMMA , $LOCALIZE[31707]][/COLOR]</label>
+					<font>font12</font>
+					<visible>Player.HasVideo</visible>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<visible>String.IsEmpty(Player.Process(video.live.mibit.rate))</visible>
 				</control>
 				<control type="label">
 					<width>690</width>
