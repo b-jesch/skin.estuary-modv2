@@ -43,6 +43,13 @@ supports animated poster only.
 
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
+- .11
+  * disable seasonals on picture slideshow
+  * show bitrate/samplerate in music OSD
+  * seen flag of movies in flix view added
+  * smaller improvements and fixes
+
+
 - .10
   * Player Process Info extended (regular Kodi builds)
   * Introducing Player Process Info for Amlogic CPM builds (CoreELEC) (DV/HDR)
