@@ -2244,7 +2244,6 @@
         <value condition="String.IsEqual(VideoPlayer.AudioCodec,wavpack)">WAVP</value>
         <value condition="String.IsEqual(VideoPlayer.AudioCodec,wmapro)">WMA-PRO</value>
         <value condition="String.IsEqual(VideoPlayer.AudioCodec,wmav2)">WMA</value>
-        <value condition="String.IsEqual(VideoPlayer.AudioCodec,aac)">AAC</value>
 		<value>$INFO[VideoPlayer.AudioCodec,[UPPERCASE],[/UPPERCASE]]</value>
     </variable>
     <variable name="LabelAudioChannelsVar">
