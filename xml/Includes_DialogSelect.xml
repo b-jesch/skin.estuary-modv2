@@ -209,6 +209,7 @@
 						<height>35</height>
 						<label>$VAR[MediaInfoListLabelVar]</label>
 						<font>font12_bold</font>
+						<scroll>true</scroll>
 						<visible>String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
@@ -218,6 +219,7 @@
 						<height>35</height>
 						<font>font12_bold</font>
 						<label>$VAR[MediaInfoListLabelVar]</label>
+						<scroll>true</scroll>
 						<visible>!String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
