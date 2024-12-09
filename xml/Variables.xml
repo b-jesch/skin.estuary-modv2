@@ -2183,7 +2183,7 @@
 		<value condition="String.Contains(VideoPlayer.AudioCodec,dtshdma) + String.Contains(Player.Filenameandpath,DTS-X) | String.Contains(Player.Filenameandpath,DTSX)">DTS-X [FN]</value>
         <value condition="String.IsEqual(VideoPlayer.AudioCodec,dtsma)">DTS-HD MA</value>
         <value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra)">DTS-HD HRA</value>
-        <value condition="String.IsEqual(VideoPlayer.AudioCodec,eac3)">Dolby Digital Pro</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,eac3)">Dolby Digital Plus</value>
         <value condition="String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray)">PCM</value>
         <value condition="String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le)">PCM</value>
         <value condition="String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le)">PCM</value>
