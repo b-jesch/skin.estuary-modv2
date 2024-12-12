@@ -265,7 +265,7 @@
 					<animation effect="fade" time="300">VisibleChange</animation>
 					<texture colordiffuse="$VAR[Background_Opacity]" diffuse="overlays/flix_2.png">$VAR[ContentBackgroundVar]</texture>
 					<aspectratio align="center" aligny="top">scale</aspectratio>
-					<visible>[ListItem.IsCollection + String.IsEmpty(Control.GetLabel(51002))] | [!ListItem.IsCollection + String.IsEmpty(Control.GetLabel(51001))]</visible>
+					<visible>String.IsEmpty(Control.GetLabel(51001)) + String.IsEmpty(Control.GetLabel(51002))</visible>
 				</control>
 				<control type="image" id="51001">
 					<fadetime>600</fadetime>
@@ -291,7 +291,7 @@
 					<animation effect="fade" time="300">VisibleChange</animation>
 					<texture colordiffuse="$VAR[Background_Opacity]" diffuse="overlays/flix_2.png">$VAR[ContentBackgroundVar]</texture>
 					<aspectratio align="center" aligny="top">scale</aspectratio>
-					<visible>[ListItem.IsCollection + String.IsEmpty(Control.GetLabel(51004))] | [!ListItem.IsCollection + String.IsEmpty(Control.GetLabel(51003))]</visible>
+					<visible>String.IsEmpty(Control.GetLabel(51003)) + String.IsEmpty(Control.GetLabel(51004))</visible>
 				</control>
 				<control type="image" id="51003">
 					<fadetime>600</fadetime>
