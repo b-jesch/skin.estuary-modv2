@@ -46,6 +46,8 @@ supports animated poster only.
 - .12
   * "Last updated TV Shows" to TV Show Widgets added
   * some issues with content related background images in video addons fixed, settings for background fanart and extra fanart improved
+  * Infolabel VideoPlayer.AudioBitrate as Fallback to Player Process Info added
+  * minor fixes and improvements
 
 
 - .11
