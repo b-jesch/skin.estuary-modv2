@@ -455,7 +455,6 @@
 						<label>[COLOR white] $INFO[Player.Process(video.hdr.min.lum)] | $INFO[Player.Process(video.hdr.max.lum)] $LOCALIZE[31699][/COLOR]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>String.Contains(Player.Process(video.hdr.type),hdr)</visible>
 					</control>
 				</control>
 				<control type="group">
