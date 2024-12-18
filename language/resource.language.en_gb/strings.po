@@ -2956,7 +2956,7 @@ msgid "Media Source Type"
 msgstr ""
 
 msgctxt "#31707"
-msgid "FpS"
+msgid "fps"
 msgstr ""
 
 msgctxt "#31708"
