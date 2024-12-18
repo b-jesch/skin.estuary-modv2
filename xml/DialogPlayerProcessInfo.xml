@@ -104,6 +104,16 @@
 					<width>690</width>
 					<aligny>bottom</aligny>
 					<scroll>true</scroll>
+					<label>$LOCALIZE[460] : [COLOR white]$INFO[Player.Process(audiochannels),,$COMMA ]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]$INFO[VideoPlayer.AudioBitrate,$COMMA , kb/s][/COLOR]</label>
+					<font>font12</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<visible>!String.IsEmpty(VideoPlayer.AudioBitrate)</visible>
+				</control>
+				<control type="label">
+					<height>35</height>
+					<width>690</width>
+					<aligny>bottom</aligny>
+					<scroll>true</scroll>
 					<label>$LOCALIZE[14250] : [COLOR white]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]$INFO[Player.Process(audio.live.kibit.rate),$COMMA , kb/s][/COLOR]</label>
 					<font>font12</font>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -117,7 +127,7 @@
 					<label>$LOCALIZE[14250] : [COLOR white]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz][/COLOR]</label>
 					<font>font12</font>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<visible>String.IsEmpty(Player.Process(audio.live.kibit.rate))</visible>
+					<visible>String.IsEmpty(Videoplayer.AudioBitrate) + String.IsEmpty(Player.Process(audio.live.kibit.rate))</visible>
 				</control>
 				<control type="label">
 					<height>35</height>
