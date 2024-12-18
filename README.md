@@ -43,6 +43,11 @@ supports animated poster only.
 
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
+- .12
+  * "Last updated TV Shows" to TV Show Widgets added
+  * some issues with content related background images in video addons fixed, settings for background fanart and extra fanart improved
+
+
 - .11
   * disable seasonals on picture slideshow
   * show bitrate/samplerate in music OSD

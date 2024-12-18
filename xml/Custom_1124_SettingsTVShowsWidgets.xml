@@ -33,6 +33,12 @@
 						<selected>Skin.HasSetting(hide_tvshowscategory)</selected>
 						<onclick>Skin.ToggleSetting(hide_tvshowscategory)</onclick>
 					</control>
+					<control type="radiobutton" id="11112">
+						<label>$LOCALIZE[31297] : $LOCALIZE[31709]</label>
+						<include>DefaultSettingButton</include>
+						<selected>Skin.HasSetting(hide_updatedTVShows)</selected>
+						<onclick>Skin.ToggleSetting(hide_updatedTVShows)</onclick>
+					</control>
 					<control type="radiobutton" id="11113">
 						<label>$LOCALIZE[31297] : $LOCALIZE[20387]</label>
 						<include>DefaultSettingButton</include>

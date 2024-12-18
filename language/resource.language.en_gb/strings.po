@@ -2962,3 +2962,7 @@ msgstr ""
 msgctxt "#31708"
 msgid "Mbit/s"
 msgstr ""
+
+msgctxt "#31709"
+msgid "Last updated TV Shows"
+msgstr ""

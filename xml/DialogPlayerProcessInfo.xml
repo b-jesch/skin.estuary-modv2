@@ -502,7 +502,6 @@
 					<aligny>bottom</aligny>
 					<label>$INFO[Player.Process(amlogic.eoft_gamut),$LOCALIZE[31611] : [COLOR white],[/COLOR]]</label>
 					<font>font12</font>
-
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="label">
@@ -535,7 +534,7 @@
 						<width>690</width>
 						<height>35</height>
 						<aligny>bottom</aligny>
-						<label>$INFO[Player.Process(video.dovi.level),$LOCALIZE[31701] : ]</label>
+						<label>$INFO[Player.Process(video.dovi.level),$LOCALIZE[31701] : [COLOR white],[/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>!String.Contains(Player.Process(video.dovi.level),0)</visible>
