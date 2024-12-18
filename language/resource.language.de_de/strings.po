@@ -2809,3 +2809,7 @@ msgstr "FpS"
 msgctxt "#31708"
 msgid "Mbit/s"
 msgstr "Mbit/s"
+
+msgctxt "#31709"
+msgid "Last updated TV Shows"
+msgstr "Zuletzt aktualisierte Serien"

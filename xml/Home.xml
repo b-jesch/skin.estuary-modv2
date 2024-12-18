@@ -180,6 +180,13 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6200"/>
 						</include>
+						<include content="WidgetListPoster" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_updatedTVShows)">
+							<param name="content_path" value="special://skin/playlists/last_updated_tvshows.xsp"/>
+							<param name="widget_header" value="$LOCALIZE[31709]"/>
+							<param name="widget_header_focus" value="$INFO[Container(6800).ListItem.Title, | ]$INFO[Container(6800).ListItem.Year, (,)]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="6800"/>
+						</include>
 						<include content="WidgetListEpisodes" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_recentlytvshows) + Skin.HasSetting(HomeBanner)">
 							<param name="content_path" value="$VAR[HideWatchedEpisodesFromRecentlyVar]"/>
 							<param name="widget_header" value="$LOCALIZE[20387]"/>
