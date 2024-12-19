@@ -18,9 +18,9 @@
 		<control type="group">
 			<control type="image">
 				<left>0</left>
-				<top>0</top>
+				<bottom>0</bottom>
 				<width>110%</width>
-				<height>100</height>
+				<height>140</height>
 				<texture colordiffuse="$VAR[Bars_Opacity]">frame/osdfade.png</texture>
 			</control>
 			<control type="group">
@@ -28,29 +28,39 @@
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<control type="grouplist">
-					<left>20</left>
-					<top>10</top>
+					<left>30</left>
+					<bottom>30</bottom>
 					<orientation>horizontal</orientation>
-					<height>50</height>
-					<width>290</width>
-					<itemgap>3</itemgap>
+					<height>100</height>
+					<width>220</width>
+					<itemgap></itemgap>
 					<aligny>center</aligny>
 					<control type="group">
-						<width>48</width>
 						<control type="image">
-							<width>44</width>
-							<height>44</height>
-							<aligny>center</aligny>
-							<texture colordiffuse="AFFFFFFF">$VAR[LogoVar]</texture>
-						</control>
-					</control>>
-					<control type="group">
-						<width>235</width>
-						<control type="image">
-							<height>48</height>
-							<width>235</width>
+							<height>91</height>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="AFFFFFFF">$VAR[VideoresolutionFullScreenVar]</texture>
+							<texture>$VAR[VideoresolutionFullScreenVar]</texture>
+						</control>
+					</control>
+				</control>
+			</control>
+			<control type="group">
+				<animation effect="fade" time="300">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<control type="grouplist">
+					<left>215</left>
+					<bottom>30</bottom>
+					<orientation>horizontal</orientation>
+					<height>100</height>
+					<width>220</width>
+					<itemgap></itemgap>
+					<aligny>center</aligny>
+					<control type="group">
+						<control type="image">
+							<height>91</height>
+							<aspectratio>keep</aspectratio>
+							<texture>$VAR[AudioFullScreenVar]</texture>
 						</control>
 					</control>
 				</control>
