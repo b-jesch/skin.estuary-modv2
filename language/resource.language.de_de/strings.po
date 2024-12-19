@@ -2803,8 +2803,8 @@ msgid "Media Source Type"
 msgstr "Medientyp der Quelle"
 
 msgctxt "#31707"
-msgid "FpS"
-msgstr "FpS"
+msgid "fps"
+msgstr "fps"
 
 msgctxt "#31708"
 msgid "Mbit/s"
