@@ -43,6 +43,10 @@ supports animated poster only.
 
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
+- .13
+  * slide animation to disc rotation in OSD added
+
+
 - .12
   * "Last updated TV Shows" to TV Show Widgets added
   * some issues with content related background images in video addons fixed, settings for background fanart and extra fanart improved
