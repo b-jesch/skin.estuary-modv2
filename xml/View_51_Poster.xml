@@ -28,9 +28,9 @@
 				<include>Visible_Right</include>
 				<include>OpenClose_Right</include>
 				<control type="fixedlist" id="51">
-					<left>0</left>
+					<left>-45</left>
 					<top>0</top>
-					<width>110%</width>
+					<width>105%</width>
 					<height>704</height>
 					<focusposition>1</focusposition>
 					<movement>0</movement>
@@ -46,7 +46,7 @@
 					<visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(games)</visible>
 					<preloaditems>1</preloaditems>
 					<viewtype label="$LOCALIZE[20021]">icon</viewtype>
-					<itemlayout width="317">
+					<itemlayout width="280">
 						<control type="group">
 							<left>-220</left>
 							<top>19</top>
@@ -77,14 +77,14 @@
 				<control type="group">
 					<top>25</top>
 					<control type="image">
-						<left>645</left>
+						<left>580</left>
 						<top>417</top>
 						<width>32</width>
 						<height>32</height>
 						<texture>$VAR[ListWatchedIconVar]</texture>
 					</control>
 					<control type="label">
-						<left>695</left>
+						<left>630</left>
 						<top>400</top>
 						<right>50</right>
 						<height>40</height>
@@ -94,7 +94,19 @@
 						<scroll>true</scroll>
 					</control>
 					<control type="textbox">
-						<left>645</left>
+						<left>585</left>
+						<top>470</top>
+						<height>120</height>
+						<right>50</right>
+						<align>justify</align>
+						<autoscroll time="4000" delay="7000" repeat="7000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<label>[B]$VAR[CollectionNumberVar]: [/B][COLOR white]$INFO[ListItem.Plot][/COLOR]</label>
+						<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>ListItem.IsCollection + !String.IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="textbox">
+						<left>585</left>
 						<top>470</top>
 						<height>250</height>
 						<right>50</right>
@@ -103,21 +115,50 @@
 						<label>$VAR[PlotSpoilerVar]</label>
 						<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>!ListItem.IsCollection</visible>
-						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+						<visible>!ListItem.IsCollection + !String.IsEmpty(ListItem.Plot)</visible>
 					</control>
 					<control type="textbox">
-						<left>645</left>
-						<top>470</top>
-						<height>255</height>
+						<left>585</left>
+						<top>490</top>
+						<height>164</height>
 						<right>50</right>
-						<align>justify</align>
-						<autoscroll time="4000" delay="7000" repeat="7000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
-						<label>$VAR[PlotSpoilerVar]</label>
-						<shadowcolor>$VAR[ShadowColorVar]</shadowcolor>
-						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>!ListItem.IsCollection</visible>
-						<visible>String.IsEqual(Skin.Font, Arial)</visible>
+						<label>$LOCALIZE[19055]</label>
+						<visible>String.IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="list" id="50051">
+						<left>580</left>
+						<top>610</top>
+						<width>1285</width>
+						<height>170</height>
+						<orientation>horizontal</orientation>
+						<autoscroll time="1500">true</autoscroll>
+						<itemgap>5</itemgap>
+						<visible>!Skin.HasSetting(show_moviessetflag) + ListItem.IsCollection</visible>
+						<focusedlayout height="170" width="129">
+							<control type="image">
+								<left>5</left>
+								<top>0</top>
+								<right>5</right>
+								<bottom>0</bottom>
+								<aspectratio>stretch</aspectratio>
+								<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
+								<bordertexture>colors/white.png</bordertexture>
+								<bordersize>1</bordersize>
+							</control>
+						</focusedlayout>
+						<itemlayout height="170" width="129">
+							<control type="image">
+								<left>5</left>
+								<top>0</top>
+								<right>5</right>
+								<bottom>0</bottom>
+								<aspectratio>stretch</aspectratio>
+								<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
+								<bordertexture>colors/white.png</bordertexture>
+								<bordersize>1</bordersize>
+							</control>
+						</itemlayout>
+						<content sortby="year" sortorder="ascending">$VAR[InfoListPathVar]</content>
 					</control>
 				</control>
 			</control>
@@ -125,13 +166,13 @@
 		<control type="group">
 			<centertop>50%</centertop>
 			<height>670</height>
-			<left>101</left>
+			<left>40</left>
 			<depth>DepthContentPopout</depth>
 			<visible>Control.IsVisible(51)</visible>
 			<include>OpenClose_Left</include>
 			<include>Visible_Left</include>
 			<control type="image">
-				<top>-16</top>
+				<top>-19</top>
 				<left>-16</left>
 				<width>516</width>
 				<height>756</height>
@@ -141,7 +182,7 @@
 			</control>
 			<control type="image">
 				<left>0</left>
-				<top>0</top>
+				<top>-3</top>
 				<width>484</width>
 				<height>724</height>
 				<visible>Control.HasFocus(51)</visible>
@@ -150,7 +191,7 @@
 			</control>
 			<control type="image">
 				<left>0</left>
-				<top>0</top>
+				<top>-3</top>
 				<width>484</width>
 				<height>724</height>
 				<visible>Control.HasFocus(51)</visible>
@@ -160,19 +201,19 @@
 			</control>
 			<control type="image">
 				<left>4</left>
-				<top>4</top>
+				<top>1</top>
 				<width>476</width>
 				<height>716</height>
 				<fadetime>200</fadetime>
 				<aspectratio>stretch</aspectratio>
-				<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
+				<texture fallback="DefaultVideo.png" background="true">$VAR[IconWallPosterVar]</texture>
 			</control>
 			<control type="group">
-				<top>410</top>
-				<left>-403</left>
+				<top>440</top>
+				<left>-405</left>
 				<visible>Skin.HasSetting(enable_LibraryDiscArt)</visible>
 				<visible>!String.IsEmpty(ListItem.Art(discart)) + !ListItem.IsCollection</visible>
-				<animation effect="slide" start="0,0" end="353,0" time="300" tween="cubic" easing="out">VisibleChange</animation>
+				<animation effect="slide" start="0,0" end="380,0" time="600" tween="cubic" easing="out">VisibleChange</animation>
 				<animation effect="fade" start="100" end="0" time="0" condition="String.IsEmpty(ListItem.Art(discart))">Conditional</animation>
 				<control type="image">
 					<left>0</left>

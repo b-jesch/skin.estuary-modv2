@@ -45,6 +45,7 @@ supports animated poster only.
 ### 21.2.1+omega ###
 - .13
   * slide animation to disc rotation in OSD added
+  * Item movement in Poster View improved, some overlaps of items fixed 
 
 
 - .12

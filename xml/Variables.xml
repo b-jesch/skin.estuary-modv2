@@ -2131,7 +2131,7 @@
  		<value condition="!String.IsEmpty(ListItem.ExpirationDate)">$LOCALIZE[19299] : [COLOR white]$INFO[ListItem.ExpirationDate] $INFO[ListItem.ExpirationTime][/COLOR][CR]</value>
  	</variable>
 	<variable name="VideoHWDecoder">
-		<value condition="!String.IsEmpty(Player.Process(videohwdecoder))">$LOCALIZE[31228]</value>
+		<value condition="Player.Process(videohwdecoder)">$LOCALIZE[31228]</value>
 		<value>$LOCALIZE[31229]</value>
 	</variable>
 	<variable name="AddonNewsVar">
