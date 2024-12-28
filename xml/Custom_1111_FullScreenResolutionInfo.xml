@@ -22,33 +22,47 @@
 				<width>110%</width>
 				<height>100</height>
 				<texture colordiffuse="$VAR[Bars_Opacity]">frame/osdfade.png</texture>
+				<visible>String.IsEqual(Skin.String(videoresolutionpos),31710)</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<bottom>0</bottom>
+				<width>110%</width>
+				<height>100</height>
+				<texture flipy="true" colordiffuse="$VAR[Bars_Opacity]">frame/osdfade.png</texture>
+				<visible>String.IsEqual(Skin.String(videoresolutionpos),31711)</visible>
 			</control>
 			<control type="group">
 				<animation effect="fade" time="300">VisibleChange</animation>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<control type="grouplist">
-					<left>20</left>
-					<top>10</top>
+					<left>30</left>
+					<include condition="String.IsEqual(Skin.String(videoresolutionpos),31710)" content="ItemTop">
+						<param name="top">20</param>
+					</include>
+					<include condition="String.IsEqual(Skin.String(videoresolutionpos),31711)" content="ItemBottom">
+						<param name="bottom">20</param>
+					</include>
 					<orientation>horizontal</orientation>
-					<height>50</height>
-					<width>290</width>
+					<height>60</height>
+					<width>195</width>
 					<itemgap>3</itemgap>
 					<aligny>center</aligny>
 					<control type="group">
-						<width>48</width>
+						<width>60</width>
 						<control type="image">
-							<width>44</width>
-							<height>44</height>
+							<width>56</width>
+							<height>56</height>
 							<aligny>center</aligny>
 							<texture colordiffuse="AFFFFFFF">$VAR[LogoVar]</texture>
 						</control>
 					</control>>
 					<control type="group">
-						<width>235</width>
+						<width>125</width>
 						<control type="image">
-							<height>48</height>
-							<width>235</width>
+							<height>56</height>
+							<width>123</width>
 							<aspectratio>keep</aspectratio>
 							<texture colordiffuse="AFFFFFFF">$VAR[VideoresolutionFullScreenVar]</texture>
 						</control>

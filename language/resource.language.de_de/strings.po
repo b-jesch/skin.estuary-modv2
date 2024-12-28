@@ -2807,3 +2807,15 @@ msgstr "Mbit/s"
 msgctxt "#31709"
 msgid "Last updated TV Shows"
 msgstr "Zuletzt aktualisierte Serien"
+
+msgctxt "#31710"
+msgid "upper left"
+msgstr "oben links"
+
+msgctxt "#31711"
+msgid "bottom left"
+msgstr "unten links"
+
+msgctxt "#31712"
+msgid "Display Position"
+msgstr "Anzeigeposition"

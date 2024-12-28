@@ -1199,6 +1199,30 @@
 		<value condition="Skin.HasSetting(opacity_100)">FFFFFFFF</value>
 		<value>37FFFFFF</value>
 	</variable>
+	<variable name="Video_Opacity">
+		<value condition="Skin.HasSetting(opacity_100)">00FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_95)">0DFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_90)">1AFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_85)">26FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_80)">33FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_75)">40FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_70)">4DFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_65)">59FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_60)">66FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_55)">73FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_50)">80FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_45)">8CFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_40)">99FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_35)">A6FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_30)">B3FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_25)">BFFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_20)">CCFFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_15)">D9FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_10)">E6FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_5)">F2FFFFFF</value>
+		<value condition="Skin.HasSetting(opacity_0)">FFFFFFFF</value>
+		<value>37FFFFFF</value>
+	</variable>
 	<variable name="Splash_Opacity">
 		<value condition="Skin.HasSetting(opacity_0)">4FFFFFFF</value>
 		<value condition="Skin.HasSetting(opacity_5)">57FFFFFF</value>
@@ -1258,6 +1282,11 @@
 		<value condition="String.IsEqual(Skin.String(show_videoresolution),31582)">$LOCALIZE[31582]</value>
 		<value condition="String.IsEqual(Skin.String(show_videoresolution),31583)">$LOCALIZE[31583]</value>
 		<value condition="String.IsEqual(Skin.String(show_videoresolution),31584)">$LOCALIZE[31584]</value>
+		<value>$LOCALIZE[31334]</value>
+	</variable>
+	<variable name="VideoResolutionPositionVar">
+		<value condition="String.IsEqual(Skin.String(videoresolutionpos),31710)">$LOCALIZE[31710]</value>
+		<value condition="String.IsEqual(Skin.String(videoresolutionpos),31711)">$LOCALIZE[31711]</value>
 		<value>$LOCALIZE[31334]</value>
 	</variable>
 	<variable name="EpisodesDisplayVar">

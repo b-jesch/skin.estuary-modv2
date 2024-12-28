@@ -45,7 +45,10 @@ supports animated poster only.
 ### 21.2.1+omega ###
 - .13
   * slide animation to disc rotation in OSD added
-  * Item movement in Poster View improved, some overlaps of items fixed 
+  * Item movement in Poster View improved, some overlaps of items fixed
+  * some changes on displaying background video on several widgets/dialogs applied
+  * Validity of special themes in 2025 updated
+  * Display of video resolution (HDR, HDR+, HLG, Dolby Vision) and position setting (top/bottom left) improved (THX frodo19) - CoreElec only
 
 
 - .12
