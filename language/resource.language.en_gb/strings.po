@@ -2966,3 +2966,15 @@ msgstr ""
 msgctxt "#31709"
 msgid "Last updated TV Shows"
 msgstr ""
+
+msgctxt "#31710"
+msgid "upper left"
+msgstr ""
+
+msgctxt "#31711"
+msgid "bottom left"
+msgstr ""
+
+msgctxt "#31712"
+msgid "Display Position"
+msgstr ""

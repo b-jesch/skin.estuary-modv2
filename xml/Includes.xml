@@ -47,13 +47,13 @@
 	<expression name="sidebar_visible">ControlGroup(9000).HasFocus | ControlGroup(8000).HasFocus | Control.HasFocus(6130) | Control.HasFocus(6131) | Window.IsActive(videoplaylist)</expression>
 	<expression name="EnableTheme">![VideoPlayer.IsFullscreen | Window.IsActive(fullscreeninfo) | Window.IsActive(slideshow) | Window.IsVisible(visualisation) | Window.IsVisible(1104)]</expression>
 	<!-- Christmas Time from 1. Advent to 2. Christmas Date, fix end date (26.12.) -->
-	<expression name="ChristmasTime">System.Date(12-01,12-27) + !Skin.HasSetting(DisableThemes)</expression>
+	<expression name="ChristmasTime">System.Date(11-30,12-27) + !Skin.HasSetting(DisableThemes)</expression>
 	<expression name="ChristmasTheme">$EXP[ChristmasTime] + $EXP[EnableTheme]</expression>
 	<!-- Palm Sunday to Maundy Thursday, variable date -->
-	<expression name="PreEasterTime">System.Date(03-24,03-29) + !Skin.HasSetting(DisableThemes)</expression>
+	<expression name="PreEasterTime">System.Date(04-13,04-18) + !Skin.HasSetting(DisableThemes)</expression>
 	<expression name="PreEasterTheme">$EXP[PreEasterTime] + $EXP[EnableTheme]</expression>
 	<!-- Easter from Good Friday to Easter Monday, variable date -->
-	<expression name="EasterTime">System.Date(03-29,04-02) + !Skin.HasSetting(DisableThemes)</expression>
+	<expression name="EasterTime">System.Date(04-18,04-22) + !Skin.HasSetting(DisableThemes)</expression>
 	<expression name="EasterTheme">$EXP[EasterTime] + $EXP[EnableTheme]</expression>
 	<!-- Valentines Day, fix date (14.02) -->
 	<expression name="ValentineTime">System.Date(02-14,02-15) + !Skin.HasSetting(DisableThemes)</expression>
@@ -267,7 +267,6 @@
             <scrollout>false</scrollout>
             <randomize>true</randomize>
             <resetonlabelchange>true</resetonlabelchange>
-            <visible>Skin.HasSetting(EnableExtraFanart)</visible>
             <label>$INFO[ListItem.Art(fanart)]</label>
             <label>$INFO[ListItem.Art(fanart1)]</label>
             <label>$INFO[ListItem.Art(fanart2)]</label>
@@ -288,11 +287,6 @@
             <label>$INFO[ListItem.Art(tvshow.fanart7)]</label>
             <label>$INFO[ListItem.Art(tvshow.fanart8)]</label>
             <label>$INFO[ListItem.Art(tvshow.fanart9)]</label>
-			<label>$INFO[Window(Home).Property(PVR.Artwork.fanart)]</label>
-            <label>$INFO[Window(Home).Property(PVR.Artwork.fanart1)]</label>
-            <label>$INFO[Window(Home).Property(PVR.Artwork.fanart2)]</label>
-            <label>$INFO[Window(Home).Property(PVR.Artwork.fanart3)]</label>
-            <label>$INFO[Window(Home).Property(PVR.Artwork.fanart4)]</label>
             <pauseatend>8000</pauseatend>
         </control>
 		<control type="image" id="4398">
@@ -2640,60 +2634,50 @@
 		</definition>
 	</include>
 	<include name="ColoredBackgroundImages">
-		<control type="image">
+		<control type="group">
 			<depth>DepthBackground</depth>
 			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="$VAR[BackgroundColorVar]">special://skin/extras/backgrounds/primary.jpg</texture>
-			<visible>![[Player.HasVideo | Slideshow.IsActive] + Skin.HasSetting(opacity_100)]</visible>
-		</control>
-		<control type="image">
-			<depth>DepthBackground</depth>
-			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern13.png</texture>
 			<visible>!Window.IsVisible(visualisation)</visible>
-			<visible>$EXP[ChristmasTheme]</visible>
-		</control>
-		<control type="image">
-			<depth>DepthBackground</depth>
-			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern14.png</texture>
-			<visible>!Window.IsVisible(visualisation)</visible>
-			<visible>$EXP[HalloweenTheme]</visible>
-		</control>
-		<control type="image">
-			<depth>DepthBackground</depth>
-			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern17.png</texture>
-			<visible>!Window.IsVisible(visualisation)</visible>
-			<visible>$EXP[PreEasterTheme]</visible>
-		</control>
-		<control type="image">
-			<depth>DepthBackground</depth>
-			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern15.png</texture>
-			<visible>!Window.IsVisible(visualisation)</visible>
-			<visible>$EXP[EasterTheme]</visible>
-		</control>
-		<control type="image">
-			<depth>DepthBackground</depth>
-			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern16.png</texture>
-			<visible>!Window.IsVisible(visualisation)</visible>
-			<visible>$EXP[ValentineTheme]</visible>
-		</control>
-		<control type="image">
-			<depth>DepthBackground</depth>
-			<include>FullScreenDimensions</include>
-			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="$VAR[PatternColorVar]">$INFO[Skin.String(background_overlay),special://skin/extras/patterns/pattern,.png]</texture>
-			<visible>!Window.IsVisible(visualisation) + !Window.IsVisible(pvrradiordsinfo)</visible>
-			<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[PreEasterTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</visible>
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$VAR[Video_Opacity]">special://skin/extras/backgrounds/primary.jpg</texture>
+				<visible>Player.HasVideo | Slideshow.IsActive</visible>
+			</control>
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$VAR[BackgroundColorVar]">special://skin/extras/backgrounds/primary.jpg</texture>
+				<visible>!Player.HasVideo + !Slideshow.IsActive</visible>
+			</control>
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern13.png</texture>
+				<visible>$EXP[ChristmasTheme]</visible>
+			</control>
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern14.png</texture>
+				<visible>$EXP[HalloweenTheme]</visible>
+			</control>
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern17.png</texture>
+				<visible>$EXP[PreEasterTheme]</visible>
+			</control>
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern15.png</texture>
+				<visible>$EXP[EasterTheme]</visible>
+			</control>
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern16.png</texture>
+				<visible>$EXP[ValentineTheme]</visible>
+			</control>
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$VAR[PatternColorVar]">$INFO[Skin.String(background_overlay),special://skin/extras/patterns/pattern,.png]</texture>
+				<visible>!Window.IsVisible(pvrradiordsinfo) + !$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[PreEasterTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</visible>
+			</control>
 		</control>
 	</include>
 	<include name="DefaultBackground">

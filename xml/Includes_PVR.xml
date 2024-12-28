@@ -1235,7 +1235,7 @@
 			<height>370</height>
 			<animation effect="slide" end="0,-50" time="0" condition="Skin.HasSetting(ShowPVRGroups) + Window.IsVisible(tvguide)">Conditional</animation>
 			<control type="image">
-				<texture colordiffuse="99FFFFFF">lists/panel.png</texture>
+				<texture colordiffuse="CDFFFFFF">lists/panel.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<right>-30</right>
@@ -1257,7 +1257,7 @@
 					<top>5</top>
 					<bottom>5</bottom>
 					<visible>Player.HasVideo</visible>
-					<visible>!Window.IsVisible(DialogPVRInfo.xml)</visible>
+					<visible>!Window.IsVisible(DialogPVRInfo.xml) + Skin.HasSetting(background_showvideo)</visible>
 				</control>
 				<control type="image">
 					<left>5</left>
@@ -1267,7 +1267,7 @@
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture fallback="DefaultTVShows.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<visible>!Player.HasVideo + String.IsEmpty(Control.GetLabel(24002))</visible>
+					<visible>!Skin.HasSetting(background_showvideo) + String.IsEmpty(Control.GetLabel(24002))</visible>
 				</control>
 				<control type="image" id="24002">
 					<left>5</left>
@@ -1276,7 +1276,7 @@
 					<bottom>5</bottom>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture>$VAR[PVRArtworksVar]</texture>
-					<visible>!Player.HasVideo</visible>
+					<visible>!Skin.HasSetting(background_showvideo)</visible>
 					<fadetime>200</fadetime>
 				</control>
 				<include content="BusyPvrArtworkSpinner">
