@@ -16,6 +16,7 @@
 			<onclick>Dialog.Close(all)</onclick>
 		</control>
 		<control type="group">
+			<visible>!String.IsEmpty(Skin.String(videoresolutionpos)) + !String.IsEqual(Skin.String(videoresolutionpos),31334)</visible>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -55,7 +56,7 @@
 							<width>56</width>
 							<height>56</height>
 							<aligny>center</aligny>
-							<texture colordiffuse="AFFFFFFF">$VAR[LogoVar]</texture>
+							<texture colordiffuse="DFFFFFFF">$VAR[LogoVar]</texture>
 						</control>
 					</control>>
 					<control type="group">
@@ -64,7 +65,7 @@
 							<height>56</height>
 							<width>123</width>
 							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="AFFFFFFF">$VAR[VideoresolutionFullScreenVar]</texture>
+							<texture colordiffuse="DFFFFFFF">$VAR[VideoresolutionFullScreenVar]</texture>
 						</control>
 					</control>
 				</control>
