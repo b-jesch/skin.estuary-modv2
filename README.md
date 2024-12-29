@@ -44,11 +44,14 @@ supports animated poster only.
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
 - .13
-  * slide animation to disc rotation in OSD added
+  * slide animation to disc rotation in OSD added (THX frodo19)
   * Item movement in Poster View improved, some overlaps of items fixed
   * some changes on displaying background video on several widgets/dialogs applied
-  * Validity of special themes in 2025 updated
+  * Video preview in EPG dialog now depends on option "show video on background" in skin settings
+  * Validity in time of special themes in 2025 updated
   * Display of video resolution (HDR, HDR+, HLG, Dolby Vision) and position setting (top/bottom left) improved (THX frodo19) - CoreElec only
+  * Issue in player process info fixed
+  * Textures updated (THX again frodo19)
 
 
 - .12

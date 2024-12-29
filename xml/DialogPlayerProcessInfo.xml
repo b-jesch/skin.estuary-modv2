@@ -148,6 +148,15 @@
 					<font>font12</font>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
+				<control type="label">
+					<height>35</height>
+					<width>690</width>
+					<aligny>bottom</aligny>
+					<scroll>true</scroll>
+					<label>$INFO[VideoPlayer.AudioLanguage,$LOCALIZE[21447] : [COLOR white][UPPERCASE],[/UPPERCASE][/COLOR]]</label>
+					<font>font12</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+				</control>
 			</control>
 			<control type="grouplist">
 				<include content="ItemLeft" condition="![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">
@@ -297,6 +306,26 @@
 							<info>Player.Process(audio.queue.data.level)</info>
 						</control>
 					</control>
+					<control type="label">
+						<height>35</height>
+						<width>690</width>
+						<aligny>bottom</aligny>
+						<scroll>true</scroll>
+						<label>$INFO[VideoPlayer.SubtitlesLanguage,$LOCALIZE[21448] : [COLOR white][UPPERCASE],[/UPPERCASE][/COLOR]]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>VideoPlayer.SubtitlesEnabled</visible>
+					</control>
+					<control type="label">
+						<height>35</height>
+						<width>690</width>
+						<aligny>bottom</aligny>
+						<scroll>true</scroll>
+						<label>$INFO[VideoPlayer.SubtitlesLanguage,$LOCALIZE[21448] : [COLOR white][UPPERCASE], - [/UPPERCASE]$LOCALIZE[13106][/COLOR]]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>!VideoPlayer.SubtitlesEnabled</visible>
+					</control>
 				</control>
 				<control type="grouplist">
 					<visible>Player.HasVideo + !String.Contains(System.OSVersionInfo,(cpm))</visible>
@@ -312,15 +341,6 @@
 						<aligny>bottom</aligny>
 						<scroll>true</scroll>
 						<label>$LOCALIZE[31691] : [COLOR white]$VAR[LabelHdrTypeVar][/COLOR]</label>
-						<font>font12</font>
-						<textcolor>$VAR[SkinColorVar]</textcolor>
-					</control>
-					<control type="label">
-						<height>35</height>
-						<width>690</width>
-						<aligny>bottom</aligny>
-						<scroll>true</scroll>
-						<label>$INFO[VideoPlayer.AudioLanguage,$LOCALIZE[21447] : [COLOR white][UPPERCASE],[/UPPERCASE][/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
