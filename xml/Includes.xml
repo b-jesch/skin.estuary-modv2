@@ -2637,16 +2637,10 @@
 		<control type="group">
 			<depth>DepthBackground</depth>
 			<include>FullScreenDimensions</include>
-			<visible>!Window.IsVisible(visualisation)</visible>
 			<control type="image">
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="$VAR[Video_Opacity]">special://skin/extras/backgrounds/primary.jpg</texture>
+				<texture diffuse="$VAR[Video_Opacity]" colordiffuse="$VAR[BackgroundColorVar]">special://skin/extras/backgrounds/primary.jpg</texture>
 				<visible>Player.HasVideo | Slideshow.IsActive</visible>
-			</control>
-			<control type="image">
-				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="$VAR[BackgroundColorVar]">special://skin/extras/backgrounds/primary.jpg</texture>
-				<visible>!Player.HasVideo + !Slideshow.IsActive</visible>
 			</control>
 			<control type="image">
 				<aspectratio>scale</aspectratio>
