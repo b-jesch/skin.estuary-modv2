@@ -2639,7 +2639,7 @@
 			<include>FullScreenDimensions</include>
 			<control type="image">
 				<aspectratio>scale</aspectratio>
-				<texture diffuse="$VAR[Video_Opacity]" colordiffuse="$VAR[BackgroundColorVar]">special://skin/extras/backgrounds/primary.jpg</texture>
+				<texture colordiffuse="$VAR[BackgroundColorVar]">colors/black.png</texture>
 				<visible>Player.HasVideo | Slideshow.IsActive</visible>
 			</control>
 			<control type="image">

@@ -1199,30 +1199,6 @@
 		<value condition="Skin.HasSetting(opacity_100)">FFFFFFFF</value>
 		<value>37FFFFFF</value>
 	</variable>
-	<variable name="Video_Opacity">
-		<value condition="Skin.HasSetting(opacity_100)">00FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_95)">0DFFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_90)">1AFFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_85)">26FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_80)">33FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_75)">40FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_70)">4DFFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_65)">59FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_60)">66FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_55)">73FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_50)">80FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_45)">8CFFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_40)">99FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_35)">A6FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_30)">B3FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_25)">BFFFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_20)">CCFFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_15)">D9FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_10)">E6FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_5)">F2FFFFFF</value>
-		<value condition="Skin.HasSetting(opacity_0)">FFFFFFFF</value>
-		<value>37FFFFFF</value>
-	</variable>
 	<variable name="Splash_Opacity">
 		<value condition="Skin.HasSetting(opacity_0)">4FFFFFFF</value>
 		<value condition="Skin.HasSetting(opacity_5)">57FFFFFF</value>
@@ -1796,14 +1772,6 @@
 		<value condition="!String.IsEmpty(Container.Art(tvshow.poster)) + Container.Content(episodes)">$INFO[Container.Art(tvshow.poster)]</value>
 		<value>$INFO[ListItem.Art(poster)]</value>
 	</variable>
-	<!--
-	<variable name="VideoVersionPosterVar">
-		<value condition="ControlGroup(200).HasFocus(201) + !String.IsEmpty(Container(50).ListItem.Art(poster))">$INFO[Container(50).ListItem.Art(poster)]</value>
-		<value condition="ControlGroup(200).HasFocus(201) + String.IsEmpty(Container(51).ListItem.Art(poster))">$INFO[Container(50).ListItem.Art(thumb)]</value>
-		<value condition="ControlGroup(200).HasFocus(202) + !String.IsEmpty(Container(51).ListItem.Art(poster))">$INFO[Container(51).ListItem.Art(poster)]</value>
-		<value condition="ControlGroup(200).HasFocus(202) + String.IsEmpty(Container(51).ListItem.Art(poster))">$INFO[Container(51).ListItem.Art(thumb)]</value>
-	</variable>
-	-->
 	<variable name="VideoVersionFileVar">
 		<value condition="Control.HasFocus(50)">$INFO[Container(50).ListItem.FileNameAndPath]</value>
 		<value condition="Control.HasFocus(51)">$INFO[Container(51).ListItem.FileNameAndPath]</value>
