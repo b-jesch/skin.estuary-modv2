@@ -908,7 +908,7 @@ msgstr "上一章"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31237"
-msgid "Opacity for fanart as background"
+msgid "Opacity for background fanart"
 msgstr "作为背景的同人画的不透明度"
 
 #: /xml/SkinSettings.xml

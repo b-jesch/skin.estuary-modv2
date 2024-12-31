@@ -922,7 +922,7 @@ msgstr "Önceki bölüm"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31237"
-msgid "Opacity for fanart as background"
+msgid "Opacity for background fanart"
 msgstr "Arka plandaki fanart için şeffaflık"
 
 #: /xml/SkinSettings.xml

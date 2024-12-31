@@ -907,7 +907,7 @@ msgstr "Predchádzajúca kapitola"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31237"
-msgid "Opacity for fanart as background"
+msgid "Opacity for background fanart"
 msgstr "Priesvitnosť fanartu na pozadí"
 
 #: /xml/SkinSettings.xml

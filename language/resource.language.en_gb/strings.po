@@ -908,7 +908,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#31237"
-msgid "Opacity for fanart as background"
+msgid "Opacity for background fanart"
 msgstr ""
 
 #: /xml/SkinSettings.xml

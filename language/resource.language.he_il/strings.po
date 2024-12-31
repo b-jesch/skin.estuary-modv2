@@ -937,7 +937,7 @@ msgid "Previous chapter"
 msgstr "הפרק הקודם"
 
 msgctxt "#31237"
-msgid "Opacity for fanart as background"
+msgid "Opacity for background fanart"
 msgstr "אטימות לפאנארט כרקע"
 
 #: /xml/SkinSettings.xml

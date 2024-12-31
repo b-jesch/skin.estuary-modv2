@@ -2639,38 +2639,43 @@
 			<include>FullScreenDimensions</include>
 			<control type="image">
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="$VAR[BackgroundColorVar]">colors/black.png</texture>
-				<visible>Player.HasVideo | Slideshow.IsActive</visible>
+				<texture colordiffuse="$VAR[BackgroundColorVar]">special://skin/extras/backgrounds/primary.jpg</texture>
+				<visible>![[Player.HasVideo | Slideshow.IsActive] + Skin.HasSetting(opacity_100)]</visible>
+			</control>
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$VAR[PatternColorVar]">$INFO[Skin.String(background_overlay),special://skin/extras/patterns/pattern,.png]</texture>
+				<visible>!Window.IsVisible(visualisation) + !Window.IsVisible(pvrradiordsinfo)</visible>
 			</control>
 			<control type="image">
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern13.png</texture>
+				<visible>!Window.IsVisible(visualisation)</visible>
 				<visible>$EXP[ChristmasTheme]</visible>
 			</control>
 			<control type="image">
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern14.png</texture>
+				<visible>!Window.IsVisible(visualisation)</visible>
 				<visible>$EXP[HalloweenTheme]</visible>
 			</control>
 			<control type="image">
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern17.png</texture>
+				<visible>!Window.IsVisible(visualisation)</visible>
 				<visible>$EXP[PreEasterTheme]</visible>
 			</control>
 			<control type="image">
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern15.png</texture>
+				<visible>!Window.IsVisible(visualisation)</visible>
 				<visible>$EXP[EasterTheme]</visible>
 			</control>
 			<control type="image">
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern16.png</texture>
+				<visible>!Window.IsVisible(visualisation)</visible>
 				<visible>$EXP[ValentineTheme]</visible>
-			</control>
-			<control type="image">
-				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="$VAR[PatternColorVar]">$INFO[Skin.String(background_overlay),special://skin/extras/patterns/pattern,.png]</texture>
-				<visible>!Window.IsVisible(pvrradiordsinfo) + !$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[PreEasterTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</visible>
 			</control>
 		</control>
 	</include>

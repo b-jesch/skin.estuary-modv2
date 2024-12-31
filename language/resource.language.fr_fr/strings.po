@@ -952,7 +952,7 @@ msgstr "Chapitre précédent"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31237"
-msgid "Opacity for fanart as background"
+msgid "Opacity for background fanart"
 msgstr "Opacité des Fanarts en arrière-plan"
 
 #: /xml/SkinSettings.xml

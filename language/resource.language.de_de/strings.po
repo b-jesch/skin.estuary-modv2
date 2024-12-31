@@ -906,8 +906,8 @@ msgstr "Vorheriges Kapitel"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31237"
-msgid "Opacity for fanart as background"
-msgstr "Deckkraft für Fanart im Hintergrund"
+msgid "Opacity for background fanart"
+msgstr "Deckkraft für Hintergrund Fanart"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31238"
