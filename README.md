@@ -43,6 +43,10 @@ supports animated poster only.
 
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
+- .14
+  * Revert background/video overlay to previous behaviour
+
+
 - .13
   * slide animation to disc rotation in OSD added (THX frodo19)
   * Item movement in Poster View improved, some overlaps of items fixed
