@@ -43,6 +43,10 @@ supports animated poster only.
 
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
+- .15
+  * smaller issues in PVR Guide fixed
+
+
 - .14
   * Revert background/video overlay to previous behaviour
 
