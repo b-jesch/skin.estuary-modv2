@@ -505,9 +505,8 @@
 						<align>justify</align>
 						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$VAR[ListBoxInfoVar]</label>
-						<visible>!String.IsEqual(ListItem.DbType,episode) + !String.IsEqual(listitem.dbtype,artist) + !String.IsEqual(listitem.dbtype,song) + !Container.Content(favourites)</visible>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>!Container.Content(genres)</visible>
+						<visible>!String.IsEqual(ListItem.DbType,episode) + !String.IsEqual(listitem.dbtype,artist) + !String.IsEqual(listitem.dbtype,song) + !Container.Content(genres) + !Container.Content(favourites)</visible>
 					</control>
 					<control type="textbox" id="15501">
 						<top>495</top>

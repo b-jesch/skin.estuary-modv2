@@ -127,6 +127,18 @@
 					<bordertexture colordiffuse="$VAR[PvrIconBGVar]">colors/white.png</bordertexture>
 					<bordersize>2</bordersize>
 					<fadetime>200</fadetime>
+					<visible>Skin.HasSetting(EnablePvrIconBG)</visible>
+				</control>
+				<control type="image">
+					<left>5</left>
+					<right>5</right>
+					<top>5</top>
+					<bottom>5</bottom>
+					<aspectratio align="left" aligny="top">keep</aspectratio>
+					<texture fallback="DefaultTVShows.png">$VAR[PVRArtworksVarInfo]</texture>
+					<bordersize>2</bordersize>
+					<fadetime>200</fadetime>
+					<visible>!Skin.HasSetting(EnablePvrIconBG)</visible>
 				</control>
 				<control type="group">
 					<left>7</left>

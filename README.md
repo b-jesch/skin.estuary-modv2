@@ -45,6 +45,7 @@ supports animated poster only.
 ### 21.2.1+omega ###
 - .15
   * smaller issues in PVR Guide fixed
+  * Inconsistence of showing channel backgrounds in several PVR views fixed (thanks Atreyu)
 
 
 - .14
