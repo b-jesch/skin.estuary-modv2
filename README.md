@@ -46,6 +46,7 @@ supports animated poster only.
 - .15
   * smaller issues in PVR Guide fixed
   * Inconsistence of showing channel backgrounds in several PVR views fixed (thanks Atreyu)
+  * Introducing season fanart in Flix view
 
 
 - .14
