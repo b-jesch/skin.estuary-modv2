@@ -1450,13 +1450,13 @@
 				<include content="MediaFlag">
 					<param name="texture" value="$PARAM[resolution_var]" />
 					<param name="width" value="58" />
-					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoResolution)" />
+					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoResolution) + !Skin.HasSetting(show_mediaresolutionflag)" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.VideoCodec,flags/videocodec/,.png]" />
 					<param name="fallback" value="flags/videocodec/fallback.png" />
 					<param name="width" value="104" />
-					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoCodec)" />
+					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoCodec) + !Skin.HasSetting(show_mediavideocodecflag)" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.HdrType,flags/videoresolution/,.png]" />
@@ -1477,19 +1477,19 @@
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.VideoAspect,flags/aspectratio/,.png]" />
 					<param name="fallback" value="flags/aspectratio/fallback.png" />
 					<param name="width" value="86" />
-					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoAspect)" />
+					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoAspect) + !Skin.HasSetting(show_mediaaspectratioflag)" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$PARAM[audiocodec_var]" />
 					<param name="fallback" value="flags/audiocodec/fallback.png" />
 					<param name="width" value="104" />
-					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioCodec)" />
+					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioCodec) + !Skin.HasSetting(show_mediaaudiocodecflag)" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.AudioChannels,flags/audiochannel/,.png]" />
 					<param name="fallback" value="flags/audiochannel/fallback.png" />
 					<param name="width" value="104" />
-					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioChannels)" />
+					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioChannels) + !Skin.HasSetting(show_mediaaudiochannelsflag)" />
 				</include>
 				<include content="MediaFlag">
 					<param name="width" value="5" />
@@ -1501,7 +1501,7 @@
 					<param name="label_width" value="98" />
 					<param name="label_left" value="41" />
 					<param name="label" value="$INFO[ListItem.Duration]" />
-					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.Duration) + String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,song)" />
+					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.Duration) + String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,song) + !Skin.HasSetting(show_mediadurationflag)" />
 				</include>
 				<include content="MediaFlagsRatings" condition="$PARAM[show_ratings]">
 					<param name="infolabel_prefix"/>
