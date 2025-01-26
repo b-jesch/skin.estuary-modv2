@@ -43,6 +43,10 @@ supports animated poster only.
 
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
+- .16
+  * Revert/fix conditional visibility of Poster view when "Show media names with widget names" is disabled
+
+
 - .15
   * smaller issues in PVR Guide fixed
   * Inconsistence of showing channel backgrounds in several PVR views fixed (thanks Atreyu)
