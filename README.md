@@ -43,6 +43,10 @@ supports animated poster only.
 
 ![](resources/setup_ap.png)
 ### 21.2.1+omega ###
+- .17
+  * some improvements in triple list view
+
+
 - .16
   * Revert/fix conditional visibility of Poster view when "Show media names with widget names" is disabled
 
