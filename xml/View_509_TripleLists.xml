@@ -19,13 +19,13 @@
 			</include>
 			<control type="fixedlist" id="509">
 				<width>33.3333333%</width>
-				<top>0</top>
-				<bottom>0</bottom>
+				<top>80</top>
+				<bottom>70</bottom>
 				<left>0</left>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
-				<movement>2</movement>
-				<focusposition>3</focusposition>
+				<movement>6</movement>
+				<focusposition>0</focusposition>
 				<onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
 				<onright condition="Container.Content(artists) + Control.IsVisible(5091)">5091</onright>
 				<onright condition="Container.Content(tvshows) + Control.IsVisible(5093)">5093</onright>
@@ -33,13 +33,13 @@
 				<ondown>509</ondown>
 				<viewtype label="$LOCALIZE[31414]">list</viewtype>
 				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(tvshows)</visible>
-				<focusedlayout height="160" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(tvshows)">
+				<focusedlayout height="156" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(tvshows)">
 					<control type="group">
-						<top>-50</top>
+						<top>0</top>
 						<control type="image">
 							<left>0</left>
 							<right>0</right>
-							<height>160</height>
+							<height>156</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(5091) | Control.HasFocus(5092) | Control.HasFocus(5093) | Control.HasFocus(5094)">Conditional</animation>
 							<visible>Control.HasFocus(509) | Control.HasFocus(5091) | Control.HasFocus(5092) | Control.HasFocus(5093) | Control.HasFocus(5094)</visible>
@@ -47,7 +47,7 @@
 						<control type="image">
 							<left>0</left>
 							<right>0</right>
-							<height>160</height>
+							<height>156</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(5091) | Control.HasFocus(5092) | Control.HasFocus(5093) | Control.HasFocus(5094)">Conditional</animation>
 							<visible>Control.HasFocus(509) | Control.HasFocus(5091) | Control.HasFocus(5092) | Control.HasFocus(5093) | Control.HasFocus(5094)</visible>
@@ -55,7 +55,7 @@
 						</control>
 						<control type="image">
 							<left>35</left>
-							<top>20</top>
+							<top>18</top>
 							<width>120</width>
 							<height>120</height>
 							<texture fallback="DefaultAudio.png">$INFO[ListItem.Thumb]</texture>
@@ -67,7 +67,7 @@
 						</control>
 						<control type="image">
 							<left>35</left>
-							<top>20</top>
+							<top>18</top>
 							<width>120</width>
 							<height>120</height>
 							<texture>DefaultFolderBackSquare.png</texture>
@@ -102,7 +102,7 @@
 						</control>
 						<control type="image">
 							<left>30</left>
-							<top>20</top>
+							<top>18</top>
 							<width>84</width>
 							<height>120</height>
 							<texture>DefaultFolderBackPoster.png</texture>
@@ -114,7 +114,7 @@
 						</control>
 						<control type="image">
 							<left>145</left>
-							<top>25</top>
+							<top>23</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[ListWatchedIconVar]</texture>
@@ -122,7 +122,7 @@
 						</control>
 						<control type="label">
 							<left>185</left>
-							<top>20</top>
+							<top>18</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
@@ -155,12 +155,12 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="160" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(tvshows)">
+				<itemlayout height="156" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(tvshows)">
 					<control type="group">
-						<top>-50</top>
+						<top>0</top>
 						<control type="image">
 							<left>35</left>
-							<top>20</top>
+							<top>18</top>
 							<width>120</width>
 							<height>120</height>
 							<texture fallback="DefaultAudio.png">$INFO[ListItem.Thumb]</texture>
@@ -172,7 +172,7 @@
 						</control>
 						<control type="image">
 							<left>35</left>
-							<top>20</top>
+							<top>18</top>
 							<width>120</width>
 							<height>120</height>
 							<texture>DefaultFolderBackSquare.png</texture>
@@ -194,7 +194,7 @@
 						</control>
 						<control type="image">
 							<left>30</left>
-							<top>20</top>
+							<top>18</top>
 							<width>84</width>
 							<height>120</height>
 							<texture fallback="DefaultVideo.png">$VAR[ShiftThumbVar]</texture>
@@ -206,7 +206,7 @@
 						</control>
 						<control type="image">
 							<left>30</left>
-							<top>20</top>
+							<top>18</top>
 							<width>84</width>
 							<height>120</height>
 							<texture>DefaultFolderBackPoster.png</texture>
@@ -218,7 +218,7 @@
 						</control>
 						<control type="image">
 							<left>145</left>
-							<top>25</top>
+							<top>23</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[ListWatchedIconVar]</texture>
@@ -226,7 +226,7 @@
 						</control>
 						<control type="image">
 							<left>145</left>
-							<top>25</top>
+							<top>23</top>
 							<width>32</width>
 							<height>32</height>
 							<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
@@ -235,7 +235,7 @@
 						</control>
 						<control type="label">
 							<left>185</left>
-							<top>20</top>
+							<top>18</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
@@ -245,7 +245,7 @@
 						</control>
 						<control type="label">
 							<left>185</left>
-							<top>20</top>
+							<top>18</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
@@ -301,8 +301,8 @@
 			<visible>Container.Content(artists)</visible>
 			<control type="fixedlist" id="5091">
 				<width>33.3333333%</width>
-				<top>0</top>
-				<bottom>0</bottom>
+				<top>80</top>
+				<bottom>70</bottom>
 				<left>33.3333333%</left>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
@@ -316,13 +316,13 @@
 				<viewtype label="$LOCALIZE[31414]">list</viewtype>
 				<visible>Container.Content(artists)</visible>
 				<onclick>RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
-				<focusedlayout height="160" condition="Container.Content(artists)">
+				<focusedlayout height="156" condition="Container.Content(artists)">
 					<control type="group">
-						<top>-50</top>
+						<top>0</top>
 						<control type="image">
 							<left>0</left>
 							<right>0</right>
-							<height>160</height>
+							<height>156</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(509) | Control.HasFocus(5092)">Conditional</animation>
 							<visible>Control.HasFocus(509) | Control.HasFocus(5091) | Control.HasFocus(5092)</visible>
@@ -330,7 +330,7 @@
 						<control type="image">
 							<left>0</left>
 							<right>0</right>
-							<height>160</height>
+							<height>156</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(509) | Control.HasFocus(5092)">Conditional</animation>
 							<visible>Control.HasFocus(509) | Control.HasFocus(5091) | Control.HasFocus(5092)</visible>
@@ -338,7 +338,7 @@
 						</control>
 						<control type="image">
 							<left>35</left>
-							<top>20</top>
+							<top>18</top>
 							<width>120</width>
 							<height>120</height>
 							<texture fallback="DefaultAudio.png">$INFO[ListItem.Thumb]</texture>
@@ -348,7 +348,7 @@
 						</control>
 						<control type="label">
 							<left>190</left>
-							<top>20</top>
+							<top>18</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
@@ -378,12 +378,12 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="160" condition="Container.Content(artists)">
+				<itemlayout height="156" condition="Container.Content(artists)">
 					<control type="group">
-						<top>-50</top>
+						<top>0</top>
 						<control type="image">
 							<left>35</left>
-							<top>20</top>
+							<top>18</top>
 							<width>120</width>
 							<height>120</height>
 							<texture fallback="DefaultAudio.png">$INFO[ListItem.Thumb]</texture>
@@ -433,27 +433,27 @@
 			<visible>Container.Content(tvshows)</visible>
 			<control type="fixedlist" id="5093">
 				<width>33.3333333%</width>
-				<top>0</top>
-				<bottom>0</bottom>
+				<top>80</top>
+				<bottom>70</bottom>
 				<left>33.3333333%</left>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<pagecontrol>531</pagecontrol>
 				<movement>2</movement>
-				<focusposition>3</focusposition>
+				<focusposition>2</focusposition>
 				<onleft>509</onleft>
 				<onright>5094</onright>
 				<onup>5093</onup>
 				<ondown>5093</ondown>
 				<viewtype label="$LOCALIZE[31414]">list</viewtype>
 				<visible>Container.Content(tvshows)</visible>
-				<focusedlayout height="160" condition="Container.Content(tvshows)">
+				<focusedlayout height="156" condition="Container.Content(tvshows)">
 					<control type="group">
-						<top>-50</top>
+						<top>0</top>
 						<control type="image">
 							<left>0</left>
 							<right>0</right>
-							<height>160</height>
+							<height>156</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(509) | Control.HasFocus(5094)">Conditional</animation>
 							<visible>Control.HasFocus(509) | Control.HasFocus(5093) | Control.HasFocus(5094)</visible>
@@ -461,7 +461,7 @@
 						<control type="image">
 							<left>0</left>
 							<right>0</right>
-							<height>160</height>
+							<height>156</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(509) | Control.HasFocus(5094)">Conditional</animation>
 							<visible>Control.HasFocus(509) | Control.HasFocus(5093) | Control.HasFocus(5094)</visible>
@@ -469,7 +469,7 @@
 						</control>
 						<control type="image">
 							<left>30</left>
-							<top>20</top>
+							<top>18</top>
 							<width>84</width>
 							<height>120</height>
 							<texture fallback="DefaultVideo.png">$VAR[InfoWallThumbVar]</texture>
@@ -480,14 +480,14 @@
 						</control>
 						<control type="image">
 							<left>145</left>
-							<top>25</top>
+							<top>23</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[ListWatchedIconVar]</texture>
 						</control>
 						<control type="label">
 							<left>185</left>
-							<top>20</top>
+							<top>18</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
@@ -517,12 +517,12 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="160" condition="Container.Content(tvshows)">
+				<itemlayout height="156" condition="Container.Content(tvshows)">
 					<control type="group">
-						<top>-50</top>
+						<top>0</top>
 						<control type="image">
 							<left>30</left>
-							<top>20</top>
+							<top>18</top>
 							<width>84</width>
 							<height>120</height>
 							<texture fallback="DefaultVideo.png">$VAR[InfoWallThumbVar]</texture>
@@ -533,14 +533,14 @@
 						</control>
 						<control type="image">
 							<left>145</left>
-							<top>25</top>
+							<top>23</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[ListWatchedIconVar]</texture>
 						</control>
 						<control type="image">
 							<left>145</left>
-							<top>25</top>
+							<top>23</top>
 							<width>32</width>
 							<height>32</height>
 							<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
@@ -548,7 +548,7 @@
 						</control>
 						<control type="label">
 							<left>185</left>
-							<top>20</top>
+							<top>18</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
@@ -557,7 +557,7 @@
 						</control>
 						<control type="label">
 							<left>185</left>
-							<top>20</top>
+							<top>18</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
@@ -624,16 +624,16 @@
 			<control type="fixedlist" id="5092">
 				<width>33.3333333%</width>
 				<right>0</right>
-				<top>0</top>
-				<bottom>0</bottom>
+				<top>80</top>
+				<bottom>70</bottom>
 				<onleft>5091</onleft>
 				<onright>531</onright>
 				<onup>5092</onup>
 				<ondown>5092</ondown>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
-				<movement>5</movement>
-				<focusposition>6</focusposition>
+				<movement>8</movement>
+				<focusposition>0</focusposition>
 				<viewtype label="$LOCALIZE[31414]">list</viewtype>
 				<visible>Container.Content(artists) | Container.Content(albums)</visible>
 				<focusedlayout height="80" condition="Container.Content(artists) | Container.Content(albums)">
@@ -722,26 +722,26 @@
 			</include>
 			<control type="fixedlist" id="5094">
 				<width>33.3333333%</width>
-				<top>0</top>
-				<bottom>0</bottom>
+				<top>80</top>
+				<bottom>70</bottom>
 				<right>0</right>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<movement>2</movement>
-				<focusposition>3</focusposition>
+				<focusposition>2</focusposition>
 				<onleft>5093</onleft>
 				<onright>531</onright>
 				<onup>5094</onup>
 				<ondown>5094</ondown>
 				<viewtype label="$LOCALIZE[31414]">list</viewtype>
 				<visible>Container.Content(tvshows)</visible>
-				<focusedlayout height="160" condition="Container.Content(tvshows)">
+				<focusedlayout height="156" condition="Container.Content(tvshows)">
 					<control type="group">
-						<top>-50</top>
+						<top>0</top>
 						<control type="image">
 							<left>0</left>
 							<right>0</right>
-							<height>160</height>
+							<height>156</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(509) | Control.HasFocus(5093)">Conditional</animation>
 							<visible>Control.HasFocus(509) | Control.HasFocus(5093) | Control.HasFocus(5094)</visible>
@@ -749,7 +749,7 @@
 						<control type="image">
 							<left>0</left>
 							<right>0</right>
-							<height>160</height>
+							<height>156</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(509) | Control.HasFocus(5093)">Conditional</animation>
 							<visible>Control.HasFocus(509) | Control.HasFocus(5093) | Control.HasFocus(5094)</visible>
@@ -757,7 +757,7 @@
 						</control>
 						<control type="image">
 							<left>30</left>
-							<top>20</top>
+							<top>18</top>
 							<width>120</width>
 							<height>120</height>
 							<texture fallback="DefaultVideoFanart.png">$VAR[InfoWallThumbVar2]</texture>
@@ -767,14 +767,14 @@
 						</control>
 						<control type="image">
 							<left>175</left>
-							<top>25</top>
+							<top>23</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[ListWatchedIconVar]</texture>
 						</control>
 						<control type="label">
 							<left>215</left>
-							<top>20</top>
+							<top>18</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
@@ -804,12 +804,12 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="160" condition="Container.Content(tvshows)">
+				<itemlayout height="156" condition="Container.Content(tvshows)">
 					<control type="group">
-						<top>-50</top>
+						<top>0</top>
 						<control type="image">
 							<left>30</left>
-							<top>20</top>
+							<top>18</top>
 							<width>120</width>
 							<height>120</height>
 							<texture fallback="DefaultVideoFanart.png">$VAR[InfoWallThumbVar2]</texture>
@@ -819,14 +819,14 @@
 						</control>
 						<control type="image">
 							<left>175</left>
-							<top>25</top>
+							<top>23</top>
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[ListWatchedIconVar]</texture>
 						</control>
 						<control type="image">
 							<left>175</left>
-							<top>25</top>
+							<top>23</top>
 							<width>32</width>
 							<height>32</height>
 							<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
@@ -834,7 +834,7 @@
 						</control>
 						<control type="label">
 							<left>215</left>
-							<top>20</top>
+							<top>18</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
@@ -843,7 +843,7 @@
 						</control>
 						<control type="label">
 							<left>215</left>
-							<top>20</top>
+							<top>18</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
