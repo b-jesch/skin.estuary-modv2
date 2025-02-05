@@ -45,6 +45,7 @@ supports animated poster only.
 ### 21.2.1+omega ###
 - .17
   * some improvements in triple list view
+  * improve check of HDR type labels in video OSD 
 
 
 - .16

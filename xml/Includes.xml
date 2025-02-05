@@ -4102,12 +4102,12 @@
 							</include>
 							<include content="MediaFlag">
 								<param name="texture" value="$INFO[VideoPlayer.HdrType,flags/videoresolution/,.png]" />
-								<param name="visible" value="[String.Contains(VideoPlayer.HdrType,hdr) | String.Contains(VideoPlayer.HdrType,hlg)] + !String.Contains(Player.Filenameandpath,.hdrplus.) + !Window.IsVisible(visualisation)" />
+								<param name="visible" value="[String.Contains(VideoPlayer.HdrType,hdr) | String.Contains(VideoPlayer.HdrType,hlg)] + !String.Contains(Player.Filenameandpath,.hdrplus.) + !String.IsEqual(Player.Process(video.source.hdr.type.raw),2) + !Window.IsVisible(visualisation)" />
 								<param name="width" value="58" />
 							</include>
 							<include content="MediaFlag">
 								<param name="texture" value="flags/videoresolution/hdrplus.png" />
-								<param name="visible" value="String.Contains(Player.Filenameandpath,.hdrplus.) + !Window.IsVisible(visualisation)" />
+								<param name="visible" value="[String.Contains(Player.Filenameandpath,.hdrplus.) | String.IsEqual(Player.Process(video.source.hdr.type.raw),2)] + !Window.IsVisible(visualisation)" />
 								<param name="width" value="92" />
 							</include>
 							<include content="MediaFlag">
